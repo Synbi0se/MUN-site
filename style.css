@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'ChaumontScript';
+    src: url('ChaumontScript-Regular.otf') format('opentype');
+}
+
+/* HTML BASE TYPE */
+body{
+    display: block;
+    margin: 0px;
+    font-family: 'ChaumontScript', sans-serif;
+}
+header{
+    background-color: #007D45;
+    color: #ffffff;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 10px;
+    font-size: 50px;
+}
+footer{
+    background-color: #111111;
+}
+
+/* div class */
+.content{
+    color:#111111;
+}

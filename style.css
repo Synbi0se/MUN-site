@@ -7,12 +7,13 @@
 body{
     display: block;
     margin: 0px;
-    font-family: 'ChaumontScript', sans-serif;
+    text-align: justify;
 }
 header{
     background-color: #007D45;
     color: #ffffff;
     text-align: center;
+    font-family: 'ChaumontScript', sans-serif;
     font-size: x-large;
     padding-top: 10px;
     font-size: 50px;
@@ -21,9 +22,31 @@ footer{
     background-color: #111111;
     color: white;
     padding: 20px;
+    display: flex;
+}
+a{
+    /* text-decoration: none; */
+    color:white
 }
 
+
+
+
 /* div class */
+.toolbar{
+    position: relative;
+    right: 48%;
+}
 .content{
     color:#111111;
+    padding: 20px;
+}
+.panoramun{
+    margin: 20px;
+}
+.links{
+    padding-left: 100px;
+}
+.links br{
+    margin-bottom: 10px;
 }

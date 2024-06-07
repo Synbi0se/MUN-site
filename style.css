@@ -9,23 +9,16 @@ body{
     margin: 0px;
     text-align: justify;
 }
-header{
-    background-color: #007D45;
-    color: #ffffff;
-    text-align: center;
-    font-family: 'ChaumontScript', sans-serif;
-    font-size: x-large;
-    padding-top: 10px;
-    font-size: 50px;
-}
 footer{
     background-color: #111111;
     color: white;
     padding: 20px;
     display: flex;
+    flex: auto;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 a{
-    /* text-decoration: none; */
     color:white
 }
 
@@ -34,8 +27,18 @@ a{
 
 /* div class */
 .toolbar{
-    position: relative;
-    right: 48%;
+    background-color: #007D45;
+    position: fixed;
+    width: 100%;
+    display: flex;
+}
+.toolbar .link{
+    padding-left: 10%;
+    color: white;
+    flex: auto;
+}
+.toolbar .language{
+    padding: 10px;
 }
 .content{
     color:#111111;
@@ -47,6 +50,21 @@ a{
 .links{
     padding-left: 100px;
 }
-.links br{
-    margin-bottom: 10px;
+.tractopelle{
+    padding-top: 170px;
+    background-color: #007D45;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'ChaumontScript', sans-serif;
+    font-size: 200px;
+    height: 700px;
+}
+/* div ID */
+#languageButton{
+    border: none;
+    background: none;
+    padding-right: 10px;
+}
+footer #col{
+    flex: auto;
 }

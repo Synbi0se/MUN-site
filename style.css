@@ -1,6 +1,15 @@
+/* ----------------------------------------- */
+/* CHANGER WIDTH EN MAX-WIDTH */
+
+/* FAUT FAIRE UNE SECTION POUR LES TRIANGLES */
+/* ----------------------------------------- */
 @font-face {
     font-family: 'ChaumontScript';
-    src: url('ChaumontScript-Regular.otf') format('opentype');
+    src: url('font/ChaumontScript-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'DinaChaumont';
+    src: url('font/DinaChaumont-TextRegular.otf') format('opentype');
 }
 
 /* HTML BASE TYPE */
@@ -8,7 +17,7 @@ body{
     display: block;
     margin: 0px;
     text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'DinaChaumont'
 }
 footer{
     background-color: #111111;
@@ -76,6 +85,7 @@ h1{
 padding: none;
 }
 
+/* ========================== */
 /* bureau */
 .bureau{
     width: 100%;
@@ -93,16 +103,18 @@ padding: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 .bureau .line .right{
     flex: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 .bureau img{
     width: 200px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -117,10 +129,29 @@ padding: none;
 }
 .ca .others img{
     width: 60px;
-    border-radius: 50%;
 }
 .ca .others{
     display: flex;
+}
+
+
+
+
+/* ========================= */
+/* partenaires */
+.partenaires .line{
+    display: flex;
+    width: fit-content;
+    margin: 10%;&
+}
+.partenaires .line img{
+    width: 100% ;
+}
+.partenaires .line .col{
+    flex: auto;
+    text-align: center;
+    width: 30%;
+    margin: 50px;
 }
 
 
@@ -141,10 +172,3 @@ footer #col{
     text-align: center;
     align-content: center;
 }
-#triangle {
-    width  : 0;
-    height : 0;
-    border-top  : 50px solid #007D45;
-    border-right : 100% solid transparent;
-    background-image: "img/Panorama MUN 2024.jpg";
-  }

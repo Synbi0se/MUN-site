@@ -21,4 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Add event listener to button
     languageButton.addEventListener("click", changeLanguageImage);
+
 });

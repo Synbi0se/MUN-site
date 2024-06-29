@@ -2,7 +2,17 @@
 /* CHANGER WIDTH EN MAX-WIDTH */
 
 /* FAUT FAIRE UNE SECTION POUR LES TRIANGLES */
+
+/* align-items: center;
+align-self: center;
+align-content: center;
+justify-content: center;
+justify-self: center;
+justify-items: center;
+text-align: center; */
+
 /* ----------------------------------------- */
+
 @font-face {
     font-family: 'ChaumontScript';
     src: url('font/ChaumontScript-Regular.otf') format('opentype');
@@ -17,7 +27,9 @@ body{
     display: block;
     margin: 0px;
     text-align: justify;
-    font-family: 'DinaChaumont'
+    font-family: DinaChaumont;
+    min-width: 700px ;
+    background-color: none;
 }
 footer{
     background-color: #111111;
@@ -27,11 +39,12 @@ footer{
     padding-left: 100px;
     padding-right: 100px;
 }
-a{
+.a{
     color:white;
+    font-weight:bold;
 }
-h1{
-    font-family: ChaumontScript;
+.title{
+    font-family: 'ChaumontScript';
     text-decoration: underline;
     background-color: #007D45;
     padding: 10px;
@@ -42,98 +55,145 @@ h1{
     font-weight: bold;
 }
 
+/* -------------------------------------- */
+.laclass{
+    width: 50%;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    transition: top 1s;
+}
+.laclass:hover{
+    top:0px
+}
+
 
 
 
 /* div class */
-.toolbar{
-    background-color: #007D45;
+header{
+    background-color: #007d45cc;
     position: fixed;
-    width: 100%;
-    display: flex;
-}
-.toolbar .link-container{
     display: flex;
     width: 100%;
-    height: 35px;
+    height: 37px;
 }
-.toolbar .link{
+header .link-container{
+    display: flex;
+    width: 100%;
+}
+header .link{
     color: white;
     flex: auto;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.toolbar .language{
-    padding: 10px;
+header .language{
+    padding: 5px;
 }
 
-.tractopelle{
+
+.front{
     background-color: #007D45;
-    color: #ffffff;
-    padding: 40px;
-    padding-top: 75px;
+    padding-top: 67px;
+    padding-bottom: 30px;
     text-align: center;
+}
+.front img{
+    max-width: 600px;
+    size-adjust: 90%;
 }
 .content{
     color:#111111;
 }
 .panoramun{
-    margin: none;
+    text-align: center;
+    transition: all 2s;
+}
+.panoramun:hover img{
+    width: 80%
+}
+.presentation .text{
+    margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+}
+.chaumun2025{
+    background-color: #007D45;
+    color:#fff;
+}
+.chaumun2025 .text{
+    padding-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    background-color: #006D45;
 }
 .links{
 padding: none;
 }
 
 /* ========================== */
+.ca .secr{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    padding: 2%;
+    background-color: #007D45;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ca .secr .text{
+    font-size: 30px;
+    padding-left: 2%;
+}
+.ca .secr img{
+    border-radius: 50%;
+    width: 20%;
+}
 /* bureau */
 .bureau{
-    width: 100%;
     text-align: center;
-    display: block;
-}
-.bureau .line{
-    display: flex;
-    margin: 20px;
-    font-weight: bold;
-    font-size: 20px;
-}
-.bureau .line .left{
-    flex: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-}
-.bureau .line .right{
-    flex: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
+    background-color: rgb(110, 0, 0);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .bureau img{
     width: 200px;
-    /* border-radius: 50%; */
     padding-right: 10px;
     padding-left: 10px;
 }
-.ca{
+.row{
     width: 100%;
-    text-align: center;
 }
-.ca .person{
+.row #card{
     flex: auto;
-    display: block;
-    text-align: center;
-}
-.ca .others img{
-    width: 60px;
-}
-.ca .others{
+    width: 50%;
+    padding: 1%;
     display: flex;
+    justify-content: center;
 }
-
+.row .text{
+    align-content: center;
+}
+.row .name{
+    font-weight: bold;
+    font-size: 30;
+}
+.row .role{
+    font-style: italic;
+}
 
 
 
@@ -142,7 +202,6 @@ padding: none;
 .partenaires .line{
     display: flex;
     width: fit-content;
-    margin: 10%;&
 }
 .partenaires .line img{
     width: 100% ;
@@ -150,13 +209,12 @@ padding: none;
 .partenaires .line .col{
     flex: auto;
     text-align: center;
-    width: 30%;
-    margin: 50px;
+    align-content: center;
+    width: 27%;
+    margin: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
-
-
-
-
 
 
 /* =============================================== */
@@ -169,6 +227,20 @@ padding: none;
 }
 footer #col{
     flex: auto;
+    width: 20%;
     text-align: center;
     align-content: center;
 }
+
+
+
+
+
+
+/* [class^="panoramun"]:hover [class^="zob"] {
+    width: 1000px;
+    color: rgb(255, 255, 255);
+    font-size: 70%;
+    justify-content: center;
+    transition: all 2s ease-out;
+} */

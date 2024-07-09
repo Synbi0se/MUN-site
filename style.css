@@ -24,20 +24,8 @@ text-align: center; */
 
 /* HTML BASE TYPE */
 body{
-    display: block;
-    margin: 0px;
     text-align: justify;
-    font-family: DinaChaumont;
-    min-width: 700px ;
-    background-color: none;
-}
-footer{
-    background-color: #111111;
-    color: white;
-    padding: 20px;
-    display: flex;
-    padding-left: 100px;
-    padding-right: 100px;
+    min-width: 360px ;
 }
 .a{
     color:white;
@@ -47,16 +35,18 @@ footer{
     font-family: 'ChaumontScript';
     text-decoration: underline;
     background-color: #007D45;
+    color: white;
     padding: 10px;
     color: white;
-    margin-top: 0px;
     margin-bottom: 0px;
     font-size: 30px;
     font-weight: bold;
 }
-
+.row{
+    margin: 0px;
+}
 /* -------------------------------------- */
-.laclass{
+/* .laclass{
     width: 50%;
     margin: 20px;
     margin-left: auto;
@@ -70,7 +60,7 @@ footer{
 }
 .laclass:hover{
     top:0px
-}
+} */
 
 
 
@@ -81,7 +71,8 @@ header{
     position: fixed;
     display: flex;
     width: 100%;
-    height: 37px;
+    height: 38px;
+    font-family: 'DinaChaumont';
 }
 header .link-container{
     display: flex;
@@ -95,7 +86,7 @@ header .link{
     display: flex;
 }
 header .language{
-    padding: 5px;
+    margin: 4px;
 }
 
 
@@ -109,16 +100,17 @@ header .language{
     max-width: 600px;
     size-adjust: 90%;
 }
-.content{
+.wrap{
     color:#111111;
+    font-family: 'DinaChaumont';
 }
 .panoramun{
     text-align: center;
     transition: all 2s;
 }
-.panoramun:hover img{
+/* .panoramun:hover img{
     width: 80%
-}
+} */
 .presentation .text{
     margin: 20px;
     margin-left: 20%;
@@ -141,25 +133,42 @@ padding: none;
 }
 
 /* ========================== */
-.ca .secr{
-    width: 50%;
+.secr{
     display: flex;
+    justify-content: center;
+}
+.secr .container{
+    display: flex;
+    background-color: #007D45;
+    justify-self: center;
     justify-content: center;
     align-items: center;
     margin: 2%;
     padding: 2%;
-    background-color: #007D45;
     border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    width: max-content;
 }
-.ca .secr .text{
+.secr .text{
     font-size: 30px;
-    padding-left: 2%;
+    padding-left: 3%;
 }
-.ca .secr img{
+.secr img{
     border-radius: 50%;
     width: 20%;
+}
+.secr .text{
+    align-content: center;
+}
+.secr .name{
+    font-weight: bold;
+    font-size: 30;
+}
+.secr .role{
+    font-style: italic;
+    font-size: 20;
+}
+.secr .saying{
+    font-size: 20;
 }
 /* bureau */
 .bureau{
@@ -169,74 +178,88 @@ padding: none;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.bureau .row{
+    width: 100%;
+}
 .bureau img{
-    width: 200px;
+    max-width: 200px;
     padding-right: 10px;
     padding-left: 10px;
 }
-.row{
-    width: 100%;
-}
-.row #card{
-    flex: auto;
-    width: 50%;
+.bureau #card{
     padding: 1%;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
 }
-.row .text{
+.bureau .text{
     align-content: center;
 }
-.row .name{
+.bureau .name{
     font-weight: bold;
     font-size: 30;
 }
-.row .role{
+.bureau .role{
     font-style: italic;
-}
+} 
 
 
 
 /* ========================= */
 /* partenaires */
-.partenaires .line{
-    display: flex;
-    width: fit-content;
+.partenaires{
+    align-items: center;
 }
-.partenaires .line img{
-    width: 100% ;
+.partenaires .row{
+    width: 100%;
 }
-.partenaires .line .col{
-    flex: auto;
+.partenaires img{
+    padding: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    max-width: 100%;
+}
+.partenaires #col{
     text-align: center;
-    align-content: center;
-    width: 27%;
-    margin: 2%;
-    margin-left: 7%;
-    margin-right: 7%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 
-/* =============================================== */
-/* =============================================== */
-/* div ID */
-#languageButton{
+/* FOOTER */
+footer{
+    background-color: #111111;
+    color: #fff;
+    text-align: center;
+    min-height: 300px;
+    align-items: center;
+    display: grid;
+    padding: 2%;
+}
+footer img{
+    max-width: 30%;
+}
+footer .row{
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+}
+footer #col{
+    padding: 2%;
+    justify-content: center;
+    display: grid;
+}
+footer .link{
+    text-align: left;
+}
+
+
+
+/* #languageButton{
     border: none;
     background: none;
     padding-right: 10px;
-}
-footer #col{
-    flex: auto;
-    width: 20%;
-    text-align: center;
-    align-content: center;
-}
-
-
-
-
-
-
+} */
 /* [class^="panoramun"]:hover [class^="zob"] {
     width: 1000px;
     color: rgb(255, 255, 255);

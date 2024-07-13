@@ -31,24 +31,17 @@ body{
     padding: 10px;
     color: white;
     margin-bottom: 0px;
-    font-size: 30px;
     font-weight: bold;
 }
 
 /* div class */
-header{
+/* header{
     background-color: #007d45cc;
     position: fixed;
     display: flex;
     width: 100%;
     height: 38px;
     font-family: 'DinaChaumont';
-}
-header .menu{
-    margin: 5px;
-}
-header .menu img{
-    height: 28px;
 }
 header .cont{
     display: flex;
@@ -64,22 +57,52 @@ header .link{
 }
 header .language{
     margin: 4px;
+} */
+.menu {
+    width: 250px;
+    height: 100%;
+    background-color: #33333380;
+    position: fixed;
+    top: 0px;
+    left: -250px;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+.menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+.menu a:hover {
+    background-color: #575757;
+}
+.menu-btn {
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    background-color: #ddd;
+    position: fixed;
+    z-index: 1;
 }
 
-
+.wrap{
+    color:#111111;
+    font-family: 'DinaChaumont';
+}
 .front{
     background-color: #007D45;
-    padding-top: 67px;
+    padding-top: 68px;
     padding-bottom: 30px;
     text-align: center;
 }
 .front img{
     width: 100%;
     max-width: 600px;
-}
-.wrap{
-    color:#111111;
-    font-family: 'DinaChaumont';
 }
 .panoramun{
     text-align: center;
@@ -96,6 +119,9 @@ header .language{
 .chaumun2025 img{
     width: 100%;
     margin-bottom: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    object-fit:cover;
 }
 
 /* ========================== */

@@ -1,74 +1,25 @@
-/* ----------------------------------------- */
-/* CHANGER WIDTH EN MAX-WIDTH */
-
-/* FAUT FAIRE UNE SECTION POUR LES TRIANGLES */
-
-/* ----------------------------------------- */
-
 @font-face {
-    font-family: 'ChaumontScript';
-    src: url('font/ChaumontScript-Regular.otf') format('opentype');
+    font-family: "ChaumontScript";
+    src: url("font/ChaumontScript-Regular.otf") format("opentype");
 }
-@font-face {
-    font-family: 'DinaChaumont';
-    src: url('font/DinaChaumont-TextRegular.otf') format('opentype');
+@font-face{
+    font-family: "DinaChaumont";
+    src: url("font/DinaChaumont-TextRegular.otf") format("opentype");
+
 }
 
-/* HTML BASE TYPE */
-body{
-    text-align: justify;
-    min-width: 360px ;
-}
-.a{
-    color:white;
-    font-weight:bold;
-}
-.title{
-    font-family: 'ChaumontScript';
-    text-decoration: underline;
-    background-color: #007D45;
-    color: white;
-    padding: 10px;
-    color: white;
-    margin-bottom: 0px;
-    font-weight: bold;
-}
 
-/* div class */
-/* header{
-    background-color: #007d45cc;
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 38px;
-    font-family: 'DinaChaumont';
-}
-header .cont{
-    display: flex;
-    flex: auto;
-}
-header .link{
-    display: flex;
-    flex: auto;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    
-}
-header .language{
-    margin: 4px;
-} */
-.menu {
+.menu{
     width: 250px;
-    height: 100%;
-    background-color: #33333380;
+    height: 350px;
+    background-color: #333333B0;
     position: fixed;
     top: 0px;
     left: -250px;
     transition: 0.3s;
-    padding-top: 60px;
+    padding-top: 55px;
 }
-.menu a {
+.menu a{
     padding: 10px 15px;
     text-decoration: none;
     font-size: 18px;
@@ -76,185 +27,38 @@ header .language{
     display: block;
     transition: 0.3s;
 }
-.menu a:hover {
-    background-color: #575757;
+.menu a:hover{
+    background-color: #555555B0;
 }
-.menu-btn {
+.menu-btn{
     font-size: 20px;
     cursor: pointer;
     color: #333;
     padding: 10px 15px;
     border: none;
-    background-color: #ddd;
+    background-color: transparent;
     position: fixed;
     z-index: 1;
 }
+/* .menu-btn:hover{
+    background-color: #ccc;
+} */
+
 
 .wrap{
-    color:#111111;
-    font-family: 'DinaChaumont';
+    font-family: "DinaChaumont";
 }
-.front{
+.frontpage{
     background-color: #007D45;
-    padding-top: 68px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-.front img{
     width: 100%;
-    max-width: 600px;
+    padding: 50px 100px;
 }
-.panoramun{
-    text-align: center;
-}
-.presentation .text{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.frontpage img{
+    width: 50%;
+    max-width: 400px;
+    min-width: 150px;
 }
 
-.chaumun2025{
-    background-color: #007D45;
-    color:#fff;
+#1{
+    padding: 200px;
 }
-.chaumun2025 img{
-    width: 100%;
-    margin-bottom: 20px;
-    padding-left: 1%;
-    padding-right: 1%;
-    object-fit:cover;
-}
-
-/* ========================== */
-.secr{
-    display: flex;
-    justify-content: center;
-}
-.secr .container{
-    display: flex;
-    background-color: #007D45;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    margin: 2%;
-    padding: 2%;
-    border-radius: 20px;
-    width: max-content;
-}
-.secr .text{
-    font-size: 30px;
-    padding-left: 3%;
-}
-.secr img{
-    border-radius: 50%;
-    width: 20%;
-}
-.secr .text{
-    align-content: center;
-}
-.secr .name{
-    font-weight: bold;
-    font-size: 30;
-}
-.secr .role{
-    font-style: italic;
-    font-size: 20;
-}
-.secr .saying{
-    font-size: 20;
-}
-/* bureau */
-.bureau{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.bureau .row{
-    width: 100%;
-}
-.bureau img{
-    max-width: 200px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.bureau #card{
-    padding: 1%;
-    justify-content: center;
-}
-.bureau .text{
-    align-content: center;
-}
-.bureau .name{
-    font-weight: bold;
-    font-size: 30;
-}
-.bureau .role{
-    font-style: italic;
-} 
-
-
-
-/* ========================= */
-/* partenaires */
-.partenaires{
-    align-items: center;
-}
-.partenaires .row{
-    width: 100%;
-}
-.partenaires img{
-    padding: 20px;
-    padding-left: 20%;
-    padding-right: 20%;
-    max-width: 100%;
-}
-.partenaires #col{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-
-/* FOOTER */
-footer{
-    background-color: #111111;
-    color: #fff;
-    text-align: center;
-    min-height: 300px;
-    align-items: center;
-    display: grid;
-    padding: 2%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-footer img{
-    max-width: 40%;
-}
-footer .row{
-    text-align: center;
-    align-items: center;
-    max-width: 100%;
-}
-footer #col{
-    padding: 2%;
-    justify-content: center;
-    display: grid;
-}
-footer .link{
-    text-align: left;
-}
-
-
-
-/* #languageButton{
-    border: none;
-    background: none;
-    padding-right: 10px;
-} */
-/* [class^="panoramun"]:hover [class^="zob"] {
-    width: 1000px;
-    color: rgb(255, 255, 255);
-    font-size: 70%;
-    justify-content: center;
-    transition: all 2s ease-out;
-} */

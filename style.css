@@ -33,16 +33,16 @@
 .menu-btn{
     font-size: 20px;
     cursor: pointer;
-    color: #333;
+    color: white;
     padding: 10px 15px;
     border: none;
-    background-color: transparent;
+    background-color: #333333B0;
     position: fixed;
     z-index: 1;
 }
-/* .menu-btn:hover{
-    background-color: #ccc;
-} */
+.menu-btn:hover{
+    background-color: #555555B0;
+}
 
 
 .wrap{
@@ -51,14 +51,27 @@
 .frontpage{
     background-color: #007D45;
     width: 100%;
-    padding: 50px 100px;
+    padding: 5%;
+    display: flex;
 }
 .frontpage img{
     width: 50%;
     max-width: 400px;
     min-width: 150px;
 }
+.frontpage .text{
+    display: block;
+    color: white;
+    align-content: center;
+    padding-left: 30px;
+}
+.frontpage .title{
+    font-size:30px;
+}
 
-#1{
-    padding: 200px;
+
+
+
+.lorem{
+    width: 10px;
 }

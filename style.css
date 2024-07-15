@@ -63,15 +63,115 @@
     display: block;
     color: white;
     align-content: center;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 .frontpage .title{
-    font-size:30px;
+    font-size:25px;
 }
 
 
 
 
-.lorem{
-    width: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dieu{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+.dieu .container{
+    display: flex;
+    justify-content: center;
+}
+.dieu #card{
+    align-items: center;
+}
+.dieu img{
+    max-width:50%;
+}
+.dieu .text{
+    padding: 2%;
+    align-items: center;
+}
+.dieu .name{
+    font-size: 25px;
+    font-weight: bold;
+}
+.dieu .special{
+    text-align: justify;
+}
+
+
+.secr{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.bureau{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bureau .row{
+    width: 100%;
+}
+.bureau img{
+    max-width: 200px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.bureau #card{
+    padding: 1%;
+    justify-content: center;
+}
+.bureau .text{
+    align-content: center;
+}
+.bureau .name{
+    font-weight: bold;
+    font-size: 30;
+}
+.bureau .role{
+    font-style: italic;
+} 
+
+
+.ca{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.ca img{
+    max-width: 100px;
+}
+.ca #card{
+    padding: 1%;
+    justify-content: center;
+}
+.ca .text{
+    align-content: center;
+}
+.ca .name{
+    font-weight: bold;
+    font-size: 20;
+}
+.ca .role{
+    font-style: italic;
+} 

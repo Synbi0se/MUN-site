@@ -8,7 +8,9 @@
 
 }
 
-
+h1{
+    text-align: center;
+}
 .menu{
     width: 250px;
     height: 350px;
@@ -42,6 +44,9 @@
 }
 .menu-btn:hover{
     background-color: #555555B0;
+}
+.menu img{
+    width:50px;
 }
 
 
@@ -83,12 +88,47 @@
 
 
 
+/* HOME */
+.whatisit{
+    margin: 20px 2% 20px 2%;
+    text-align: justify;
+}
+.chaumun{
+    margin: 20px 2% 20px 2%;
+    text-align: justify; 
+}
+.partenaires{
+    text-align: center;
+}
+.partenaires .row{
+    width: 100%;
+}
+.partenaires img{
+    padding: 10px 10% 10px 10%;
+    max-width: 100%;
+}
+.partenaires #col{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+/* TEAM */
 .dieu{
     text-align: center;
     padding-top: 20px;
@@ -106,6 +146,7 @@
 }
 .dieu .text{
     padding: 2%;
+    display: grid;
     align-items: center;
 }
 .dieu .name{

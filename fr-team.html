@@ -9,9 +9,9 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    <button id="menu-btn" onclick="toggleMenu()">☰ Menu</button>
 
-    <div id="menu" class="menu">
+    <div id="menu">
         <a href="fr-home.html" onclick="toggleMenu()">Accueil</a>
         <a href="fr-team.html" onclick="toggleMenu()">Qui sommes nous</a>
         <a href="" onclick="toggleMenu()">Notre établissement</a>
@@ -19,15 +19,15 @@
         <a href="fr-archive.html" onclick="toggleMenu()">Les anciennes conferences</a>
         <div class="language">
             <a href="en-home.html">
-                <img src="img/flag-fr.png" alt="FR" width="50px">
+                <img src="img/flag-fr.png" alt="FR">
                  -> 
-                <img src="img/flag-en.png" alt="EN" width="50px">
+                <img src="img/flag-en.png" alt="EN">
             </a>
         </div>
     </div>
 
     <div class="wrap">
-        <div class="frontpage">
+        <div id="frontpage">
             <img src="img/logo.png" alt="LOGO CHAU'MUN">
             <div class="text">
                 <div class="title">
@@ -38,8 +38,9 @@
                 </div>
             </div>
         </div>
+
         <div class="dieu">
-            <h1>MONSIEUR SAINTOT</h1>
+            <h1>REMERCIEMENTS</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-xs-12" id="card">
@@ -51,7 +52,8 @@
                                 Betrand SAINTOT
                             </div>
                             <div class="special">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat ipsum maxime natus optio ea corporis, nostrum mollitia minima explicabo repudiandae velit. Voluptatem, libero similique sapiente sit hic repellendus quis a.
+                                Un immense merci à monsieur SAINTOT sans qui ce projet n'existerai pas. Depuis le début, il travaille sans relache afin d'assurer la pérrenité du projet, mais aussi afin que des élèves français comme étrangers puissent découvrir ce qu'est la CHAU'MUN. Nous, nos prédécesseurs et nos succeseurs lui sont pleinement reconnaissant. 
+                                <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat ipsum maxime natus optio ea corporis, nostrum mollitia minima explicabo repudiandae velit. Voluptatem, libero similique sapiente sit hic repellendus quis a. -->
                             </div>
                         </div>
                     </div>
@@ -72,13 +74,7 @@
                             <div class="role">Président</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12" id="card">
-                        <img src="img/membres/zoe.png" alt="Zoé">
-                        <div class="text">
-                            <div class="name">Zoé</div>
-                            <div class="role">Présidente adjointe</div>
-                        </div>
-                    </div>
+
                     <div class="col-lg-4 col-md-6 col-xs-12" id="card">
                         <img src="img/membres/louis.png" alt="Louis">
                         <div class="text">
@@ -86,13 +82,7 @@
                             <div class="role">Trésorier (suisse)</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12" id="card">
-                        <img src="img/membres/paul.png" alt="Paul">
-                        <div class="text">
-                            <div class="name">Paul</div>
-                            <div class="role">Trésorier adjoint</div>
-                        </div>
-                    </div>
+
                     <div class="col-lg-4 col-md-6 col-xs-12" id="card">
                         <img src="img/membres/timeo.png" alt="Timéo">
                         <div class="text">
@@ -100,6 +90,23 @@
                             <div class="role">Secrétaire</div>
                         </div>
                     </div>
+
+                    <div class="col-lg-4 col-md-6 col-xs-12" id="card">
+                        <img src="img/membres/zoe.png" alt="Zoé">
+                        <div class="text">
+                            <div class="name">Zoé</div>
+                            <div class="role">Présidente adjointe</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-xs-12" id="card">
+                        <img src="img/membres/paul.png" alt="Paul">
+                        <div class="text">
+                            <div class="name">Paul</div>
+                            <div class="role">Trésorier adjoint</div>
+                        </div>
+                    </div>
+
                     <div class="col-lg-4 col-md-6 col-xs-12" id="card">
                         <img src="img/membres/françois.png" alt="François">
                         <div class="text">
@@ -114,45 +121,45 @@
             <h1>Les autres membres du conseil d'administration</h1>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-4 col-xs-12" id="card">
+                    <div class="col-lg-2 col-md-2 col-xs-6" id="card">
+                        <img src="img/membres/bertrand.png" alt="?">
+                        <div class="text">
+                            <div class="name">Bertrand</div>
+                            <div class="role">Professeur référent</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-6" id="card">
                         <img src="img/membres/!.png" alt="?">
                         <div class="text">
-                            <div class="name">Name</div>
+                            <div class="name">Kirsten</div>
                             <div class="role">Role</div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-xs-12" id="card">
+                    <div class="col-lg-2 col-md-2 col-xs-6" id="card">
+                        <img src="img/membres/maeva.png" alt="?">
+                        <div class="text">
+                            <div class="name">Maëva</div>
+                            <div class="role">Responsable réseaux sociaux</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-6" id="card">
                         <img src="img/membres/!.png" alt="?">
                         <div class="text">
-                            <div class="name">Name</div>
+                            <div class="name">Martin</div>
                             <div class="role">Role</div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-xs-12" id="card">
+                    <div class="col-lg-2 col-md-2 col-xs-6" id="card">
                         <img src="img/membres/!.png" alt="?">
                         <div class="text">
-                            <div class="name">Name</div>
-                            <div class="role">Role</div>
+                            <div class="name">Nathalène</div>
+                            <div class="role">Responsable organisation informatique</div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-xs-12" id="card">
-                        <img src="img/membres/!.png" alt="?">
+                    <div class="col-lg-2 col-md-2 col-xs-6" id="card">
+                        <img src="img/membres/timothe.png" alt="?">
                         <div class="text">
-                            <div class="name">Name</div>
-                            <div class="role">Role</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-xs-12" id="card">
-                        <img src="img/membres/!.png" alt="?">
-                        <div class="text">
-                            <div class="name">Name</div>
-                            <div class="role">Role</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-xs-12" id="card">
-                        <img src="img/membres/!.png" alt="?">
-                        <div class="text">
-                            <div class="name">Name</div>
+                            <div class="name">Timothé</div>
                             <div class="role">Role</div>
                         </div>
                     </div>

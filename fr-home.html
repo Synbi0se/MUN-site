@@ -9,9 +9,9 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    <button id="menu-btn" onclick="toggleMenu()">☰ Menu</button>
 
-    <div id="menu" class="menu">
+    <div id="menu">
         <a href="fr-home.html" onclick="toggleMenu()">Accueil</a>
         <a href="fr-team.html" onclick="toggleMenu()">Qui sommes nous</a>
         <a href="" onclick="toggleMenu()">Notre établissement</a>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="wrap">
-        <div class="frontpage">
+        <div id="frontpage">
             <img src="img/logo.png" alt="LOGO CHAU'MUN">
             <div class="text">
                 <div class="title">
@@ -39,16 +39,75 @@
             </div>
         </div>
 
-        <div class="whatisit">
-            <h1>Qu'est ce qu'un MUN ? 0123456789</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis minus, ab quasi expedita dolores consequuntur, sed nostrum incidunt unde cum, quaerat dolorum ipsam accusantium doloribus tenetur adipisci quis voluptatem corrupti?
-            <!-- Un MUN (Model of United Nations) est une conférence organisée par et pour des élèves de différentes nationalitées dans le but de les faire réfléchir sur des problématiques mondiales diverses auquels font face les délégations mondiales de l'ONU. Les objectifs de cette conférence sont diverses, tels que l'aisance oral ou la capacité d'argumentation. -->
+
+        <div class="description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-xs-12">
+                        <div class="whatisit">
+                            <h1>Qu'est ce qu'un MUN ?</h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis minus, ab quasi expedita dolores consequuntur, sed nostrum incidunt unde cum, quaerat dolorum ipsam accusantium doloribus tenetur adipisci quis voluptatem corrupti?
+                            <!-- Un MUN (Model of United Nations) est une conférence organisée par et pour des élèves de différentes nationalitées dans le but de les faire réfléchir sur des problématiques mondiales diverses auquels font face les délégations mondiales de l'ONU. Les objectifs de cette conférence sont diverses, tels que l'aisance oral ou la capacité d'argumentation. -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-xs-12">
+                        <div class="chaumun">
+                            <h1>Le CHAU'MUN</h1>
+                            Nous sommes fier de vous annoncer cette année la deuxième édition de notre MUN à Chaumont, mais aussi fier d'être le premier MUN du département. 
+                            Tout comme l'an dernier, nous sommes heureux de pouvoir vous proposer deux commités : l'un en français et l'autre en anglais. 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="chaumun">
-            <h1>Le CHAU'MUN</h1>
-            Nous sommes fier de vous annoncer cette année la deuxième édition de notre MUN à Chaumont, mais aussi fier d'être le premier MUN du département <i>et même de la région</i>. 
-            Tout comme l'an dernier, nous sommes heureux de pouvoir vous proposer deux commités : l'un en français et l'autre en anglais. 
+        <div class="container" id="keynum">
+            <h1>Quelques informations intérêssantes : </h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="element">
+                        120 élèves
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="element">
+                        2 commités
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="element">
+                        Plus de 10 nationalitées
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="element">
+                        Monsieur Saintot
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="element">
+                        BEAUCOUP D'ARGENT
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="element">
+                        TROP DE BENEVOLAT
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="line">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="infos">
+                        18-21 mars
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="infos">
+                        La capacité d'adaptation des états face à la montée progressive des océans
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="partenaires">
@@ -66,11 +125,11 @@
                             <img src="img/entreprise/ville.png" alt="logo de la ville de Chaumont">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-12" id="col">
+                    <!-- <div class="col-lg-3 col-md-4 col-xs-12" id="col">
                         <div class="item">
                             <img src="img/entreprise/departement.png" alt="logo du département de la Haute-Marne">
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-lg-3 col-md-4 col-xs-12" id="col">
                         <div class="item">
                             <img src="img/entreprise/region.jpg" alt="logo de la région Grand Est">

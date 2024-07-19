@@ -6,3 +6,8 @@ function toggleMenu() {
         menu.style.left = '-250px';
     }
 }
+
+// const device_height = window.innerHeight;
+// console.log(device_height);
+// const frontpage = document.getElementById('frontpage');
+// frontpage.style.top = -device_height;

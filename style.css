@@ -11,6 +11,18 @@
 h1{
     text-align: center;
 }
+#new{
+    background-color: #ff0000; 
+    color: white; 
+    align-self: center;
+    position: relative;
+    bottom:3px;
+    font-size:13px; 
+    padding: 5px; 
+    border-radius: 5px;
+}
+
+
 #menu{
     width: 250px;
     height: 350px;
@@ -46,40 +58,55 @@ h1{
     background-color: #555555B0;
 }
 #menu img{
-    width:50px;
+    width: 50px;
 }
 
 
-.wrap{
+#wrap{
     font-family: "DinaChaumont";
 }
 
-#frontpage{
+#background{
     /* background-color: #007D45; */
     background: center no-repeat url("img/viaduc2.jpg");
+}
+#frontpage{
     width: 100%;
     height: 500px;
     padding: 5%;
     display: flex;
+    background-color: #111111C0;
 }
 #frontpage img{
-    width: auto;
     height: auto;
     max-width: 400px;
+    max-height: 400px;
+
     min-width: 150px;
-    ;
+    min-height: 150px;
 }
-#frontpage .text{
+#frontpage #text{
     display: block;
     color: white;
     align-content: center;
     padding-left: 25px;
 }
-#frontpage .title{
+#frontpage #title{
     font-size:25px;
 }
 
 
+
+
+
+#transition{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#transition img{
+    width: 100%;
+}
 
 
 
@@ -92,18 +119,34 @@ h1{
 
 
 /* HOME */
-.description{
-    margin: 200 2% 250px 2%;
+#description{
+    margin: 200 2% 50px 2%;
     text-align: justify;
 }
-.whatisit{
+#whatisit{
     margin-top: 50px;
     padding: 1%;
 }
-.chaumun{
+#chaumun{
     margin-top: 50px;
     padding: 1%;
 }
+
+
+#info{
+    background-color: #007D45;
+    color: #fff;
+}
+#info #block{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    margin: 1%;
+    padding: 3%;
+    font-size: 30;
+}
+
 
 #keynum{
     margin: 250px auto 250px;
@@ -116,11 +159,11 @@ h1{
     height: 90%;
     margin: 1%;
     padding: 3%;
-    font-size: 50;
+    font-size: 40;
     background: linear-gradient(
         45deg,
         #007D45,
-        #008D35);
+        #00521f);
     /* background-color: #000000D0; */
     color: #fff;
     border-radius: 10px;
@@ -128,40 +171,36 @@ h1{
 #keynum #line{
     margin-top: 100px;
 }
-#keynum #infos{
+
+#prices{
+    margin: 250px auto 250px;
+    background-color: #007D45;
+    color: #fff;
+}
+#prices #title{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
-    margin: 1%;
-    padding: 3%;
-    font-size: 50;
-    /* background: linear-gradient(
-        45deg,
-        #007D45,
-        #008D35); */
-    /* background-color: #000000D0; */
-    color: #000043;
-    border-radius: 10px;
+}
+#prices #desk{
+    text-align: justify;
 }
 
 
-.partenaires{
+#partenaires{
     text-align: center;
 }
-.partenaires .row{
-    width: 100%;
-}
-.partenaires img{
+#partenaires img{
     padding: 10px 10% 10px 10%;
     max-width: 100%;
 }
-.partenaires #col{
+#partenaires #col{
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
 }
-
-
-
 
 
 
@@ -267,3 +306,8 @@ h1{
     width: 70%;
     justify-self: center;
 } 
+
+#galery img{
+    width:100%;
+    margin: 5px;
+}

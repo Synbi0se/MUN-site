@@ -17,52 +17,73 @@
         <a href="" onclick="toggleMenu()">Notre établissement</a>
         <a href="" onclick="toggleMenu()">Notre ville</a>
         <a href="fr-archive.html" onclick="toggleMenu()">Les anciennes conferences</a>
-        <div class="language">
-            <a href="en-home.html">
-                <img src="img/flag-fr.png" alt="FR">
-                 -> 
-                <img src="img/flag-en.png" alt="EN">
-            </a>
-        </div>
+        <a href="en-home.html">
+            <img src="img/flag-fr.png" alt="FR">
+            -> 
+            <img src="img/flag-en.png" alt="EN">
+        </a>
     </div>
 
-    <div class="wrap">
-        <div id="frontpage">
-            <img src="img/logo.png" alt="LOGO CHAU'MUN">
-            <div class="text">
-                <div class="title">
-                    CHAU'MUN
-                </div>
-                <div class="subtitle">
-                    Votre créativité est la clé de votre succès
+    <div id="wrap">
+        <div id="background">
+            <div id="frontpage">
+                <img src="img/logo.png" alt="LOGO CHAU'MUN">
+                <div id="text">
+                    <div id="title">
+                        CHAU'MUN
+                    </div>
+                    <div id="subtitle">
+                        Votre créativité est la clé de votre succès
+                    </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="description">
+        <div id="description">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 col-xs-12">
-                        <div class="whatisit">
+                    <div class="col-lg-6 col-md-12 col-xs-12" id="whatisit">                        
                             <h1>Qu'est ce qu'un MUN ?</h1>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis minus, ab quasi expedita dolores consequuntur, sed nostrum incidunt unde cum, quaerat dolorum ipsam accusantium doloribus tenetur adipisci quis voluptatem corrupti?
                             <!-- Un MUN (Model of United Nations) est une conférence organisée par et pour des élèves de différentes nationalitées dans le but de les faire réfléchir sur des problématiques mondiales diverses auquels font face les délégations mondiales de l'ONU. Les objectifs de cette conférence sont diverses, tels que l'aisance oral ou la capacité d'argumentation. -->
-                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-xs-12">
-                        <div class="chaumun">
+                    <div class="col-lg-6 col-md-12 col-xs-12" id="chaumun">
                             <h1>Le CHAU'MUN</h1>
                             Nous sommes fier de vous annoncer cette année la deuxième édition de notre MUN à Chaumont, mais aussi fier d'être le premier MUN du département. 
                             Tout comme l'an dernier, nous sommes heureux de pouvoir vous proposer deux commités : l'un en français et l'autre en anglais. 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="info">
+            <div id="transition">
+                <img src="img/transition/top-left.png" alt="">
+                <img src="img/transition/top-right.png" alt="">
+            </div>
+            <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div id="block">
+                            18-21 mars
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div id="block">
+                            La capacité d'adaptation des états face à la montée progressive des océans
                         </div>
                     </div>
                 </div>
+            <!-- </div> -->
+            <div id="transition">
+                <img src="img/transition/bottom-right.png" alt="">
+                <img src="img/transition/bottom-left.png" alt="">
             </div>
         </div>
 
         <div class="container" id="keynum">
-            <h1>Quelques informations intérêssantes : </h1>
+            <h1>Quelques informations intéressantes : </h1>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div id="element">
@@ -95,58 +116,86 @@
                     </div>
                 </div>
             </div>
-            <div class="row" id="line">
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div id="infos">
-                        18-21 mars
+        </div>
+
+        <div id="prices">
+            <div id="transition">
+                <img src="img/transition/top-left.png" style="justify-content: left;">
+            </div>
+            <h1>Les prix que vous pourrez obtenirs</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <div id="title">
+                            Meilleur éloquence
+                        </div>
+                        <div id="desk">
+                            Lors d'un MUN, la participation de chaqu'un est primordiale ! 
+                            Pour cette raison, nous vous motivons à être actif en décernant un prix au 3 meilleur(e)s délégué(e)s, avec quelques surprises locales pour eux/elles.
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div id="infos">
-                        La capacité d'adaptation des états face à la montée progressive des océans
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <div id="title">
+                            Meilleure tenue
+                        </div>
+                        <div id="desk">
+                            Le style fait aussi le charme d'un MUN, alors nous avons décider d'offrir un prix pour la personne qui impressionera le plus les chairs par son style vestimentaire, sa manière d'être et de s'exprimer avec les autres. 
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <div id="title">
+                            Le prix Luppi <span id="new">NEW</span>
+                        </div>
+                        <div id="desk">
+                            Monsieur LUPPI était professeur au lycée Charles de Gaulle et s'investissait beaucoup dans les projets internationnaux comme ERASMUS. 
+                            Pour cet raison, nous avons décidé de lui consacrer un prix à son nom. 
+                            Ce prix sera décerné à celui ou celle qui aura fait le plus de lien avec les autres délégations.
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <div id="transition">
+                <img src="img/transition/bottom-right.png" style="justify-content: left;">
+            </div>
         </div>
 
-        <div class="partenaires">
+        <div id="partenaires">
             <h1>Nos partenaires pour l'évènement</h1>
             <h2>Un grand merci à eux</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-xs-12" id="col">
-                        <div class="item">
+                        <div id="item">
                             <img src="img/entreprise/lycee.png" alt="logo du lycée Charles de Gaulle">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-12" id="col">
-                        <div class="item">
+                        <div id="item">
                             <img src="img/entreprise/ville.png" alt="logo de la ville de Chaumont">
                         </div>
                     </div>
-                    <!-- <div class="col-lg-3 col-md-4 col-xs-12" id="col">
-                        <div class="item">
+                    <div class="col-lg-3 col-md-4 col-xs-12" id="col">
+                        <div id="item">
                             <img src="img/entreprise/departement.png" alt="logo du département de la Haute-Marne">
                         </div>
-                    </div> -->
+                    </div>
                     <div class="col-lg-3 col-md-4 col-xs-12" id="col">
-                        <div class="item">
+                        <div id="item">
                             <img src="img/entreprise/region.jpg" alt="logo de la région Grand Est">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-12" id="col">
-                        <div class="item">
+                        <div id="item">
                             <img src="img/entreprise/leclerc.png" alt="logo de Leclerc">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-12" id="col">
-                        <div class="item">
+                        <div id="item">
                             <img src="img/entreprise/vestiaire.png" alt="logo du Vestiaire">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-12" id="col">
-                        <div class="item">
+                        <div id="item">
                             <img src="img/entreprise/ca.png" alt="logo du Crédit Agricole">
                         </div>
                     </div>

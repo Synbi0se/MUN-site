@@ -7,6 +7,11 @@ function toggleMenu() {
     }
 }
 
+// function square() {
+//     const chapeau = document.getElementById('photo');
+       
+    
+// }
 // const device_height = window.innerHeight;
 // console.log(device_height);
 // const frontpage = document.getElementById('frontpage');

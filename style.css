@@ -8,6 +8,10 @@
 
 }
 
+
+.row{
+    width: 100%;
+}
 h1{
     text-align: center;
 }
@@ -64,40 +68,37 @@ h1{
 
 #wrap{
     font-family: "DinaChaumont";
+    min-width: 250px;
 }
 
 #background{
-    /* background-color: #007D45; */
-    background: center no-repeat url("img/viaduc2.jpg");
+    background-image: url("img/viaduc.png");
+    background-repeat: no-repeat;
+    background-position: center ;
 }
 #frontpage{
     width: 100%;
-    height: 500px;
     padding: 5%;
-    display: flex;
     background-color: #111111C0;
 }
 #frontpage img{
-    height: auto;
+    width: 100%;
     max-width: 400px;
-    max-height: 400px;
-
-    min-width: 150px;
-    min-height: 150px;
+}
+#frontpage #imagebox{
+    text-align: center;
 }
 #frontpage #text{
-    display: block;
+    display: flex;
     color: white;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     padding-left: 25px;
 }
 #frontpage #title{
     font-size:25px;
 }
-
-
-
-
 
 #transition{
     display: flex;
@@ -108,7 +109,31 @@ h1{
     width: 100%;
 }
 
+footer{
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 2% 10%;
+    min-height: 300px;
+}
 
+footer a{
+    color: #fff;
+    font-weight: bold;
+}
+footer #col{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 2%;
+}
+footer #link{
+    text-align: left;
+}
 
 
 
@@ -120,8 +145,19 @@ h1{
 
 /* HOME */
 #description{
-    margin: 200 2% 50px 2%;
+    padding: auto 2% 50px 2%;
     text-align: justify;
+    background-color: #007D45;
+    color: #fff;
+}
+#description #icon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+#description #icon img{
+    width: 50px;
 }
 #whatisit{
     margin-top: 50px;
@@ -149,7 +185,7 @@ h1{
 
 
 #keynum{
-    margin: 250px auto 250px;
+    margin: 100px auto 100px;
 }
 #keynum h1{
     padding-bottom: 50px;
@@ -157,8 +193,8 @@ h1{
 #keynum #element{
     text-align: center;
     height: 90%;
-    margin: 1%;
-    padding: 3%;
+    margin: 1% 0px;
+    padding: 3% 0px;
     font-size: 40;
     background: linear-gradient(
         45deg,
@@ -173,12 +209,21 @@ h1{
 }
 
 #prices{
-    margin: 250px auto 250px;
+    margin: 100px auto 100px;
     background-color: #007D45;
     color: #fff;
 }
-#prices #title{
+#prices #icon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px auto;
     margin-top: 20px;
+}
+#prices #icon img{
+    width: 50px;
+}
+#prices #title{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -193,13 +238,12 @@ h1{
 }
 #partenaires img{
     padding: 10px 10% 10px 10%;
-    max-width: 100%;
+    max-width: 400px;
+    width: 100%;
 }
 #partenaires #col{
-    text-align: center;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
 
 
@@ -214,94 +258,109 @@ h1{
 
 
 /* TEAM */
-.dieu{
+#dieu{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.dieu .container{
-    display: flex;
-    justify-content: center;
-}
-.dieu #card{
+#dieu #card{
     align-items: center;
     align-content: center;
 }
-.dieu img{
+#dieu img{
     max-width:50%;
 }
-.dieu .text{
+#dieu #text{
     padding: 2%;
     display: grid;
     align-items: center;
 }
-.dieu .name{
+#dieu #name{
     font-size: 25px;
     font-weight: bold;
 }
-.dieu .special{
+#dieu #special{
     text-align: justify;
     align-content: center;
 }
 
 
-.secr{
+#secr{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+#secr #card{
+    align-items: center;
+    align-content: center;
+}
+#secr img{
+    max-width:50%;
+}
+#secr #text{
+    padding: 2%;
+    display: grid;
+    align-items: center;
+}
+#secr #name{
+    font-size: 25px;
+    font-weight: bold;
+}
+#secr #saying{
+    text-align: centera;
+    align-content: center;
+    font-style: italic;
+}
 
 
-.bureau{
+
+#bureau{
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: #007D45;
+    color: #fff;
 }
-.bureau .row{
-    width: 100%;
+#bureau #card{
+    padding: 1%;
+    justify-content: center;
 }
-.bureau img{
+#bureau #card img{
     max-width: 200px;
     padding-right: 10px;
     padding-left: 10px;
 }
-.bureau #card{
-    padding: 1%;
-    justify-content: center;
-}
-.bureau .text{
+#bureau #text{
     align-content: center;
 }
-.bureau .name{
+#bureau #name{
     font-weight: bold;
     font-size: 30;
 }
-.bureau .role{
+#bureau #role{
     font-style: italic;
 } 
 
 
-.ca{
+#ca{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.ca img{
+#ca img{
     max-width: 100px;
 }
-/* .ca #card{
+/* #ca #card{
     padding: 1%;
     justify-content: center;
 } */
-.ca .text{
+#ca #text{
     text-align: center;
     display: grid;
 }
-.ca .name{
+#ca #name{
     font-weight: bold;
     font-size: 20;
 }
-.ca .role{
+#ca #role{
     font-style: italic;
     width: 70%;
     justify-self: center;

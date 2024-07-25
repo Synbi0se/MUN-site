@@ -96,9 +96,10 @@ h1{
     height: 100%;
     padding-left: 25px;
 }
-#frontpage #title{
-    font-size:25px;
+#frontpage h1{
+    text-align: left;
 }
+
 
 #transition{
     display: flex;
@@ -167,18 +168,12 @@ footer #link{
     margin-top: 50px;
     padding: 1%;
 }
-
-
-#info{
-    background-color: #007D45;
-    color: #fff;
-}
-#info #block{
+#block{
     display: grid;
     text-align: center;
     align-items: center;
     height: 100%;
-    margin: 1%;
+    margin: 50px 1% none;
     padding: 3%;
     font-size: 30;
 }
@@ -241,7 +236,9 @@ footer #link{
     max-width: 400px;
     width: 100%;
 }
-#partenaires #col{
+#partenaires #item{
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }

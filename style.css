@@ -168,7 +168,7 @@ footer #link{
     margin-top: 50px;
     padding: 1%;
 }
-#block{
+#description #block{
     display: grid;
     text-align: center;
     align-items: center;
@@ -363,6 +363,61 @@ footer #link{
     justify-self: center;
 } 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCHOOL */
+#school{
+    margin-top: 50px;
+}
+#school #abc{
+    text-align: center;
+    background-color: #007D45;
+    color: #fff;
+}
+#school #block{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1%;
+}
+#school #abc img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ARCHIVE */
 #galery img{
     width:100%;
     margin: 5px;

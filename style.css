@@ -422,3 +422,34 @@ footer #link{
     width:100%;
     margin: 5px;
 }
+[class^="conf"]{
+    display: inline;
+    position: relative;
+    left : 15%;
+    padding: 20px;
+}
+.conf-fr{
+  left: 10%;
+}
+.conf-en{
+    left : 20%;
+}
+/* [class^="col-lg-3 col-md-4 col-xs-6"]{
+    width: 255px;
+    height: 170px;
+} */
+
+[class^="exp-comite"]{
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.exp-comite-fr{
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    width : 50%
+}
+h1{
+    padding-top: 40px;
+}

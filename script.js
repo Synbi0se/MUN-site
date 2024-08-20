@@ -7,6 +7,12 @@ function toggleMenu() {
     }
 }
 
+function downloadDocuments() {
+    window.open("img/logo.png")
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     textin = '<div id="frontpage"><div class="row"><div class="col-lg-4 col-md-12 col-xs-12"><div id="imagebox"><img src="img/logo.png" alt="LOGO CHAU\'MUN"></div></div><div class="col-lg-4 col-md-12 col-xs-12"><div id="text"><div><div id="title"><h1>CHAU\'MUN</h1></div><div id="subtitle">Votre créativité est la clé de votre succès</div></div></div></div></div></div>';
     const writeIn = document.getElementById("background");

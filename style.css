@@ -418,8 +418,7 @@ footer #link{
 
 
 /* ARCHIVE */
-#galery img{
-    width:100%;
+#block-photos img{
     margin: 5px;
 }
 [class^="conf"]{
@@ -455,7 +454,33 @@ footer #link{
     padding-bottom: 15px;
 
 } 
+.chaumun-2024{
+    padding-top: 40px;
+}
+.vert{
+    width: 100%;
+    height :23%;
+    margin-bottom: none;
+    padding-bottom: none    ;
+    text-align: justify;
+    background-color: #007D45;
+    color: #fff;
+}
+/* .droite{
+    padding-left: 0px;
+}
+.gauche{
+    padding-right: 0px;
+} */
 
 h1{
-    padding-top: 40px;
+    padding-top: 10px;
+}
+#transition-2{
+    margin-top: none;
+    display: flex;
+
+}
+#transition-2 img{
+    width: 100%;
 }

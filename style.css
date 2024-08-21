@@ -9,11 +9,11 @@
 }
 
 
-.row{
-    width: 100%;
-}
 h1{
     text-align: center;
+}
+p{
+    text-align: justify;
 }
 #new{
     background-color: #ff0000; 
@@ -107,6 +107,15 @@ h1{
     margin-bottom: 10px;
 }
 #transition img{
+    width: 100%;
+}
+
+#transition-2{
+    margin-top: none;
+    display: flex;
+
+}
+#transition-2 img{
     width: 100%;
 }
 
@@ -495,64 +504,56 @@ footer #link{
 
 
 /* ARCHIVE */
-[class^="conf"]{
-    display: inline;
-    position: relative;
+#vert{
+    width: 100%;
+    height :23%;
+    display: flex;
+    margin-bottom: none;
+    padding-bottom: none;
+    background-color: #007D45;
+    justify-content: center;
+    color: #fff;
+}
+.chaumun-2024{
+    padding-top: 40px;
+}
+#branch img{
+    height: 100%;
+}
 
-    padding: 20px;
-}
-.conf-fr{
-  top :30px;
-}
-.conf-en{
-    top: 30px;
-}
-[class^="exp-comite"]{
+
+[class^="exp-comity"]{
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
 }
-.exp-comite-en{
-   padding-right:20px ;
-    padding-top: 30px;
-    padding-bottom: 15px;
-
-}
-.exp-comite-fr{
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 15px;
-
-} 
-.chaumun-2024{
-    padding-top: 40px;
-}
-.vert{
-    width: 100%;
-    height :23%;
-    margin-bottom: none;
-    padding-bottom: none    ;
-    text-align: justify;
-    background-color: #007D45;
-    color: #fff;
-}
-/* .droite{
-    padding-left: 0px;
-}
-.gauche{
-    padding-right: 0px;
-} */
-
-
-#transition-2{
-    margin-top: none;
-    display: flex;
-
-}
-#transition-2 img{
+#exp-comity img{
     width: 100%;
 }
+#block-photos h1{
+    text-align: center;
+    margin-top: 30px;
+}
+#block-photos h2{
+    text-align: center;
+    margin-top: 30px;
+}
+#block-photos img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+#exp-comity-en{
+    padding: 15px 20px;
+}
+#exp-comity-fr{
+    padding: 15px 20px;
+}
 
-h1{
-    padding-top: 40px;
+#block-activites{
+    display: grid;
+    align-items: end;
+}
+#activites img{
+    width: 100%;
+    margin-bottom: 5px;
 }

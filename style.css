@@ -203,6 +203,83 @@ footer #link{
     margin-top: 100px;
 }
 
+
+
+
+
+#invitation #side{
+    text-align: justify;
+    margin-top: 20px;
+}
+#invitation a{
+    text-decoration: none;
+}
+#invitation #button-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#invitation #button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #00532f;
+  background-color: #007D45;
+  overflow: hidden;
+}
+
+#invitation #button, #button__icon, #button__text {
+  transition: all 0.3s;
+}
+
+#invitation #button #button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+#invitation #button #button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #00532f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#invitation #button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+#invitation #button:hover {
+  background: #00532f;
+}
+
+#invitation #button:hover #button__text {
+  color: transparent;
+}
+
+#invitation #button:hover #button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+#invitation #button:active #button__icon {
+  background-color: #146c54;
+}
+
+#invitation #button:active {
+  border: 1px solid #146c54;
+}
+
+
 #prices{
     margin: 100px auto 100px;
     background-color: #007D45;
@@ -418,9 +495,6 @@ footer #link{
 
 
 /* ARCHIVE */
-#block-photos img{
-    margin: 5px;
-}
 [class^="conf"]{
     display: inline;
     position: relative;
@@ -433,10 +507,6 @@ footer #link{
 .conf-en{
     top: 30px;
 }
-/* [class^="col-lg-3 col-md-4 col-xs-6"]{
-    width: 255px;
-    height: 170px;
-} */
 [class^="exp-comite"]{
     text-align: center;
     padding-left: 30px;
@@ -473,9 +543,7 @@ footer #link{
     padding-right: 0px;
 } */
 
-h1{
-    padding-top: 10px;
-}
+
 #transition-2{
     margin-top: none;
     display: flex;
@@ -483,4 +551,8 @@ h1{
 }
 #transition-2 img{
     width: 100%;
+}
+
+h1{
+    padding-top: 40px;
 }

@@ -496,6 +496,22 @@ footer #link{
 
 
 
+/* CITY */
+#city #photo{
+    display: flex;
+    margin: 50px 10px 10px;
+}
+#city img{
+    width: 100%;
+    color: gray;
+}
+
+
+
+
+
+
+
 
 
 

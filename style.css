@@ -578,11 +578,15 @@ footer #link{
     margin-bottom: 5px;
 }
 html, body {
+
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow-x: hidden; /* Prevents any horizontal scroll */
+    overflow-x: hidden; 
+}
+p{
+    text-align: justify;
 }
 #ch-2024{
     display: inline;
@@ -595,4 +599,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#text-comite{
+    text-align: center;
 }

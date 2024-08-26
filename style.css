@@ -464,22 +464,27 @@ footer #link{
 
 /* SCHOOL */
 #school{
-
     background-color: #007D45;
     color: #fff;
 }
-#school [id^="option"]{
-    margin: 20px;
+#school #icons{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-#school [id*="-l"]{
-    margin-right: 0;
-}
-#school [id*="-r"]{
-    margin-left: 0;
+#school img{
+    max-width: 150px;
 }
 #school h2{
-    color:#ff0000;
+    color:#eeeeee;
     text-decoration:underline;
+}
+#school #option{
+    margin: 20px;
+    height: 100%;
+    display: grid;
+    align-items: flex-start;
 }
 
 
@@ -494,10 +499,13 @@ footer #link{
 #city #photo{
     margin: 50px 10px 10px;
     text-align: center;
-    color: darkgrey;
-}
-#city img{
-    width: 100%;
+    color: #007D45;
+    font-weight: bold;
+    img{
+        width: 100%;
+        color: darkgray;
+        font-weight: normal;
+    }
 }
 
 

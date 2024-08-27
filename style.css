@@ -183,7 +183,6 @@ footer #link{
     margin: 50px 1% none;
     padding: 3%;
     font-size: 30;
-    transform: scaleX(1);
     line-height: normal;
 }
 
@@ -341,28 +340,28 @@ footer #link{
 
 
 /* TEAM */
-#dieu{
+#kami{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#dieu #card{
+#kami #card{
     align-items: center;
     align-content: center;
 }
-#dieu img{
+#kami img{
     max-width:50%;
 }
-#dieu #text{
+#kami #text{
     padding: 2%;
     display: grid;
     align-items: center;
 }
-#dieu #name{
+#kami #name{
     font-size: 25px;
     font-weight: bold;
 }
-#dieu #special{
+#kami #special{
     text-align: justify;
     align-content: center;
 }
@@ -463,18 +462,27 @@ footer #link{
 
 
 /* SCHOOL */
+#top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 50%;
+    }
+}
 #school{
     background-color: #007D45;
     color: #fff;
 }
 #school #icons{
-    padding: 40px;
-    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 #school img{
-    max-width: 150px;
+    max-width: 100px;
+
 }
 #school h2{
     color:#eeeeee;
@@ -482,9 +490,8 @@ footer #link{
 }
 #school #option{
     margin: 20px;
-    height: 100%;
-    display: grid;
-    align-items: flex-start;
+    display: inline;
+    align-items: center;
 }
 
 

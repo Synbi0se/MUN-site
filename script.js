@@ -8,7 +8,7 @@ function toggleMenu() {
 }
 
 function downloadDocuments() {
-    window.open("img/logo.png")
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSfYGK3mRNtdHU3td72VgmclpRCcuZYbGdaNJpmpu32LjDAdIQ/viewform?usp=sf_link")
 }
 
 

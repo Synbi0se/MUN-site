@@ -196,22 +196,16 @@ footer #link{
 #keynum h1{
     padding-bottom: 50px;
 }
-#keynum [id^="element"]{
+#keynum #element{
     text-align: center;
+    max-width: 400px;
     height: 90%;
-    margin: 1% 0px;
+    margin: 1% auto;
     padding: 3% 0px;
-    font-size: 40;
-    background: linear-gradient(
-        45deg,
-        #007D45,
-        #00521f);
-    /* background-color: #000000D0; */
+    font-size: 30;
+    background: linear-gradient(45deg, #007D45, #00521f);
     color: #fff;
     border-radius: 10px;
-}
-#keynum #line{
-    margin-top: 100px;
 }
 
 

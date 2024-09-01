@@ -203,85 +203,6 @@ footer #link{
     border-radius: 10px;
 }
 
-
-
-
-
-
-#invitation #side{
-    text-align: justify;
-    margin-top: 20px;
-    justify-content: centerw;
-}
-#invitation a{
-    text-decoration: none;
-}
-#invitation #button-wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-#invitation #button {
-  position: relative;
-  width: 150px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border: 1px solid #00532f;
-  background-color: #007D45;
-  overflow: hidden;
-}
-
-#invitation #button, #button__icon, #button__text {
-  transition: all 0.3s;
-}
-
-#invitation #button #button__text {
-  transform: translateX(-10px);
-  color: #fff;
-  font-weight: 600;
-}
-
-#invitation #button #button__icon {
-  position: absolute;
-  transform: translateX(55px);
-  height: 100%;
-  width: 39px;
-  background-color: #00532f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#invitation #button .svg{
-  width: 20px;
-  fill: #fff;
-}
-
-#invitation #button:hover {
-  background: #00532f;
-}
-
-#invitation #button:hover #button__text {
-  color: transparent;
-}
-
-#invitation #button:hover #button__icon {
-  width: 148px;
-  transform: translateX(0);
-}
-
-#invitation #button:active #button__icon {
-  background-color: #146c54;
-}
-
-#invitation #button:active {
-  border: 1px solid #146c54;
-}
-
-
 #prices{
     margin: 100px auto 100px;
     background-color: #007D45;
@@ -424,10 +345,6 @@ footer #link{
 #ca img{
     max-width: 100px;
 }
-/* #ca #card{
-    padding: 1%;
-    justify-content: center;
-} */
 #ca #text{
     text-align: center;
     display: grid;
@@ -622,49 +539,129 @@ html, body {
 
 
 /*DOWNLOAD*/
-#telechargement{
+#invitation{
+    margin: 80px auto;
+}
+#invitation #side{
+    text-align: justify;
+    margin-top: 20px;
+    justify-content: center;
+}
+#invitation a{
+    text-decoration: none;
+}
+#invitation #button-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    #button {
+        position: relative;
+        width: 150px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border: 1px solid #00532f;
+        background-color: #007D45;
+        overflow: hidden;
+    }
+    #button, #button__icon, #button__text {
+        transition: all 0.3s;
+    }
+    #button #button__text {
+        transform: translateX(10px);
+        color: #fff;
+        font-weight: 600;
+    }
+    #button #button__icon {
+        position: absolute;
+        transform: translateX(105px);
+        height: 100%;
+        width: 39px;
+        background-color: #00532f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #button .svg{
+        width: 20px;
+        fill: #fff;
+    }
+    #button:hover {
+        background: #00532f;
+    }
+    #button:hover #button__text {
+        color: transparent;
+    }
+    #button:hover #button__icon {
+        width: 148px;
+        transform: translateX(0px);
+    }
+    #button:active #button__icon {
+        background-color: #146c54;
+    }
+    #button:active {
+        border: 1px solid #146c54;
+    }
+}
+#download #telechargement{
     text-align: center;
 }
-#button-wrap {
+#download #icon img{
+    width: 50%;
+    display: flex;
+    margin: 50px auto 0px;
+}
+#download #button-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
-
-#button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em 1em;
-    background-color: #0ea900;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#button:hover {
-    background-color: #048602;
-}
-
-#button__text {
-    margin-right: 0.5em;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-#button__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-}
-
-#button__icon .svg {
-    fill: #fff;
-    width: 100%;
-    height: 100%;
+    #button {
+        position: relative;
+        width: 250px;
+        height: 80px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border: none;
+        background: linear-gradient(45deg, #007D45, #00521f);
+        overflow: hidden;
+    }
+    #button, #button__icon, #button__text {
+        transition: all 0.3s;
+    }
+    #button #button__text {
+        transform: translateX(30px);
+        color: #fff;
+        font-weight: 600;
+    }
+    #button #button__icon {
+        position: absolute;
+        transform: translateX(165px);
+        height: 100%;
+        width: 79px;
+        background-color: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #button .svg{
+        width: 20px;
+        fill: #fff;
+    }
+    #button:hover {
+        background: linear-gradient(45deg, #007D45, #00521f);
+    }
+    #button:hover #button__text {
+        color: transparent;
+    }
+    #button:hover #button__icon {
+        width: 148px;
+        transform: translateX(55px);
+    }
+    #button:active #button__icon {
+        background: linear-gradient(45deg, #007D45, #00521f);
+    }
 }

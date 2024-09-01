@@ -1,11 +1,6 @@
-@font-face {
-    font-family: "ChaumontScript";
-    src: url("font/ChaumontScript-Regular.otf") format("opentype");
-}
 @font-face{
     font-family: "DinaChaumont";
     src: url("font/DinaChaumont-TextRegular.otf") format("opentype");
-
 }
 
 
@@ -91,9 +86,9 @@ p{
 }
 #frontpage #text{
     display: flex;
-    color: white;
     justify-content: center;
     align-items: center;
+    color: white;
     height: 100%;
     padding-left: 25px;
 }

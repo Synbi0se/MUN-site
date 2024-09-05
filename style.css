@@ -414,8 +414,13 @@ footer #link{
 
 
 /* CITY */
+#city h2{
+    text-align: center;
+    color: #004525;
+    margin-top: 20px;
+}
 #city #photo{
-    margin: 50px 10px 10px;
+    margin: 10px;
     text-align: center;
     color: #007D45;
     font-weight: bold;

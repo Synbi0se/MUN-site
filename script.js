@@ -9,9 +9,11 @@ function toggleMenu() {
 
 function downloadDocuments(nom) {
     const lien = document.createElement('a');
-    lien.href = `doc/${nom}`;
-    lien.download = nom;
+    lien.href = `https://synbi0se.github.io/MUN-site/doc/${nom}`;
+    lien.download = `https://synbi0se.github.io/MUN-site/doc/${nom}`;
+    document.body.appendChild(lien);
     lien.click();
+    document.body.removeChild(lien);
 }
 function registerMun(lng){
   if (lng === "EN") {

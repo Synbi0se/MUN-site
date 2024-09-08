@@ -68,9 +68,7 @@ p{
 
 #background{
     max-width: 100%;
-    background-image: url("img/viaduc.png");
-    background-repeat: no-repeat;
-    background-position: center ;
+    background: url("img/viaduc.png") no-repeat center;
 }
 #frontpage{
     width: 100%;
@@ -201,6 +199,18 @@ footer #link{
     background: linear-gradient(45deg, #007D45, #00521f);
     color: #fff;
     border-radius: 10px;
+}
+
+#actions #element{
+    padding: 20px;
+    background: color-mix(in srgb, #aaaaaa 35%, #ebebeb 65%);
+}
+#actions p{
+    text-align: justify;
+}
+#actions img{
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 #prices{

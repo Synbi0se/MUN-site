@@ -25,6 +25,20 @@ function registerMun(lng){
   }
 }
 
+function invitation(language) {
+  const box = document.getElementById('frame')  
+ if (language === 'fr') {
+  box.innerHTML = '<iframe src="doc/Invitation to Chaumun 2025.pdf" frameborder="0"></iframe>' ;
+ }
+ if (language === 'en') {
+  box.innerHTML = '<iframe src="doc/Invitation au Chaumun 2025.pdf" frameborder="0"></iframe>' ;
+ }
+ if (language === 'de') {
+  box.innerHTML = '<iframe src="doc/Einladung zum Chaumun.pdf" frameborder="0"></iframe>' ;
+ }
+
+}
+
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     textin = '';

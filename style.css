@@ -557,12 +557,15 @@ html, body {
 #invitation{
     margin: 50px auto 50px;
     text-align: center;
-    button{
-        background-color: #007D45;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 10px;
+}
+#invitation button{
+    background-color: #007D45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    button:hover,button:active{
+        background-color: #009451;
     }
 }
 #invitation #frame{

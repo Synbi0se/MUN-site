@@ -25,7 +25,7 @@ p{
 #menu{
     width: 250px;
     height: 397px;
-    background-color: #333333B0;
+    background-color: #111111C0;
     position: fixed;
     top: 0px;
     left: -250px;
@@ -41,7 +41,7 @@ p{
     transition: 0.3s;
 }
 #menu a:hover{
-    background-color: #555555B0;
+    background-color: #666666B0;
 }
 #menu-btn{
     font-size: 20px;
@@ -49,12 +49,12 @@ p{
     color: white;
     padding: 10px 15px;
     border: none;
-    background-color: #333333B0;
+    background-color: #111111C0;
     position: fixed;
     z-index: 1;
 }
 #menu-btn:hover{
-    background-color: #555555B0;
+    background-color: #666666B0;
 }
 #menu img{
     width: 50px;
@@ -118,8 +118,9 @@ footer{
     text-align: center;
     align-items: center;
     margin-top: 100px;
-    padding: 2% 10%;
     min-height: 300px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 footer a{
     color: #fff;
@@ -130,10 +131,13 @@ footer #col{
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    padding: 2%;
+    margin: 4% auto;
 }
 footer #link{
     text-align: left;
+}
+footer iframe{
+    background-color: gray;
 }
 
 
@@ -165,11 +169,7 @@ footer #link{
 }
 #whatisit{
     margin-top: 50px;
-    padding: 1%;
-}
-#chaumun{
-    margin-top: 50px;
-    padding: 1%;
+    padding: 3%;
 }
 #description #block{
     display: grid;
@@ -181,7 +181,6 @@ footer #link{
     font-size: 30;
     line-height: normal;
 }
-
 
 #keynum{
     margin: 100px auto 100px;
@@ -202,8 +201,9 @@ footer #link{
 }
 
 #actions #element{
+    margin-bottom: 20px;
     padding: 20px;
-    background: color-mix(in srgb, #aaaaaa 35%, #ebebeb 65%);
+    background-color: #D4D4D4;
 }
 #actions p{
     text-align: justify;
@@ -236,7 +236,6 @@ footer #link{
 #prices #desk{
     text-align: justify;
 }
-
 
 #partenaires{
     text-align: center;
@@ -577,70 +576,25 @@ html, body {
         height: 100%;
     }
 }
-/* #invitation #button-wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    #button {
-        position: relative;
-        width: 150px;
-        height: 40px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        border: 1px solid #00532f;
-        background-color: #007D45;
-        overflow: hidden;
-    }
-    #button, #button__icon, #button__text {
-        transition: all 0.3s;
-    }
-    #button #button__text {
-        transform: translateX(10px);
-        color: #fff;
-        font-weight: 600;
-    }
-    #button #button__icon {
-        position: absolute;
-        transform: translateX(105px);
-        height: 100%;
-        width: 39px;
-        background-color: #00532f;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #button .svg{
-        width: 20px;
-        fill: #fff;
-    }
-    #button:hover {
-        background: #00532f;
-    }
-    #button:hover #button__text {
-        color: transparent;
-    }
-    #button:hover #button__icon {
-        width: 148px;
-        transform: translateX(0px);
-    }
-    #button:active #button__icon {
-        background-color: #146c54;
-    }
-    #button:active {
-        border: 1px solid #146c54;
-    }
-} */
 #download #telechargement{
     text-align: center;
 }
-#download #icon img{
-    width: 50%;
-    display: flex;
+#download #icon{
     margin: 50px auto 0px;
+    background-color: #111111C0;
+    color: white;
+    a{
+        text-decoration: none;
+    }
+    #flag{
+        max-width: 50%;
+        margin: 20px 25%;
+    }
+    h2{
+        text-align: center;
+    }
 }
-#download #button-wrap{
+/* #download #button-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -691,4 +645,4 @@ html, body {
     #button:active #button__icon {
         background: linear-gradient(45deg, #007D45, #00521f);
     }
-}
+} */

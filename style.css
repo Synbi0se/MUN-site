@@ -583,9 +583,7 @@ html, body {
     margin: 50px auto 0px;
     background-color: #111111C0;
     color: white;
-    a{
-        text-decoration: none;
-    }
+    max-width: 600px;
     #flag{
         max-width: 50%;
         margin: 20px 25%;
@@ -594,11 +592,16 @@ html, body {
         text-align: center;
     }
 }
-/* #download #button-wrap{
+#docs #element{
+    margin: 20px auto;
+}
+#docs #text{
+    text-align: center;
+}
+#docs #button-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     #button {
         position: relative;
         width: 250px;
@@ -645,4 +648,4 @@ html, body {
     #button:active #button__icon {
         background: linear-gradient(45deg, #007D45, #00521f);
     }
-} */
+}

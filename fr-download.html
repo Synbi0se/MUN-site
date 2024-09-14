@@ -41,7 +41,7 @@
                                     <h1>CHAU'MUN</h1>
                                 </div>
                                 <div id="subject">
-                                    <p><img src="img/icons/note.png" style="width: 20px; margin-right: 5px;">La capacité d'adaptation des Etats face à la montée progressive des océans.</p>
+                                    <p><img src="img/icons/note.png" style="width: 20px; margin-right: 5px;">Comment faire face aux conséquences de l'élévation du niveau des océans et faciliter l'adaptation des sociétés à cette situation ?</p>
                                 </div>
                                 <div id="date">
                                     <p><img src="img/icons/calendar.png" style="width: 20px;margin-top: -4px;"> 19-21 mars 2025</p> 
@@ -55,13 +55,13 @@
 
         <div class="container" id="invitation">
             <div class="row">
-                <div class="col-s-12 col-md-6 col-lg-4">
-                    <button onclick="invitation('en')" id="en">Invitation to CHAU'MUN</button>
+                <div class="col-md-12 col-lg-4">
+                    <button onclick="invitation('en')" id="en" style="background-color: #004828;">Invitation to CHAU'MUN</button>
                 </div>
-                <div class="col-s-12 col-md-6 col-lg-4">
+                <div class="col-md-12 col-lg-4">
                     <button onclick="invitation('fr')" id="fr">Invitation au CHAU'MUN</button>
                 </div>
-                <div class="col-s-12 col-md-12 col-lg-4">
+                <div class="col-md-12 col-lg-4">
                     <button onclick="invitation('de')" id="de">Einladung zum CHAU'MUN</button>
                 </div>
             </div>
@@ -70,73 +70,79 @@
             </div>
         </div>
 
-        <div id="download">
+        <div id="transition">
+            <img src="img/transition/top-left.png">
+        </div>
+        <div id="register">
             <h1>Inscriptions : </h1>
             <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYGK3mRNtdHU3td72VgmclpRCcuZYbGdaNJpmpu32LjDAdIQ/viewform?usp=sf_link">
-                        <div id="icon">
+                <div class="col-xs-12 col-lg-6">
+                    <div id="icon">
+                        <button onclick="registerMun('fr')">
                             <img src="img/flag-fr.png" id="flag">                       
-                            <h2><img src="img/icons/note.png" style="width: 25px;margin: 0 5px 7px 0;">Comité Français</h2>    
-                        </div>
-                    </a>
+                            <h2><img src="img/icons/note.png" id="icoregi">Comité Français</h2>    
+                        </button>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-6">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSewkJ_-bIDBAOy204Jz51rcxLKGvVYYsPnEginEhoc3rq9ZLw/viewform?usp=sf_link">
-                        <div id="icon">
+                <div class="col-xs-12 col-lg-6">
+                    <div id="icon">
+                        <button onclick="registerMun('en')">
                             <img src="img/flag-en.png" id="flag">
-                            <h2><img src="img/icons/note.png" style="width: 25px;margin: 0 5px 7px 0;">Comité Anglais</h2>
-                        </div>
-                    </a>
+                            <h2><img src="img/icons/note.png" id="icoregi">Comité Anglais</h2>
+                        </button>
+                    </div>
                 </div>
             </div> 
         </div>
+        <div id="transition">
+            <img src="img/transition/bottom-right.png">
+        </div>
 
         <div id="docs">
-            <h2>Documents intéressants</h2>
+            <h1>Documents intéressants :</h1>
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <div id="element">
-                        <h3 id="text">Programme élèves</h3>
-                        <div id="button-wrap">
+                        <h3 id="text">Programme élèves :</h3>
+                        <a id="button-wrap" href="doc/Provisionnal schedule 2402.pdf">
                             <button id="button" type="button">
                                 <span id="button__text">Download</span>
                                 <span id="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
                             </button>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div id="element">
-                        <h3 id="text">Programme professeurs</h3>
-                        <div id="button-wrap">
+                        <h3 id="text">Programme professeurs :</h3>
+                        <a id="button-wrap" href="doc/Provisionnal schedule teachers 2401 (1).pdf">
                             <button id="button" type="button">
                                 <span id="button__text">Download</span>
                                 <span id="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
                             </button>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div id="element">
-                        <h3 id="text">Flyer présentation</h3>
-                        <div id="button-wrap">
+                        <h3 id="text">Flyer présentation :</h3>
+                        <a id="button-wrap" href="doc/Flyer présentation.pdf">
                             <button id="button" type="button">
                                 <span id="button__text">Download</span>
                                 <span id="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
                             </button>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div id="element">
-                        <h3 id="text">Livret</h3>
-                        <div id="button-wrap">
+                        <h3 id="text">Livret :</h3>
+                        <a id="button-wrap" href="doc/MEP_Livret_MUN 2024.pdf">
                             <button id="button" type="button">
                                 <span id="button__text">Download</span>
                                 <span id="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
                             </button>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

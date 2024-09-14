@@ -563,6 +563,7 @@ html, body {
     border: none;
     border-radius: 5px;
     padding: 10px;
+    margin-bottom: 10px;
     button:hover,button:active{
         background-color: #009451;
     }
@@ -576,20 +577,31 @@ html, body {
         height: 100%;
     }
 }
-#download #telechargement{
-    text-align: center;
-}
-#download #icon{
-    margin: 50px auto 0px;
-    background-color: #111111C0;
+#register{
+    background-color: #007D45;
     color: white;
-    max-width: 600px;
+    padding-bottom: 50px;
+    button{
+        border: none;
+        padding: 0px;
+        background-color: #111111C0;
+        color: white;
+    }
+}
+#register #icon{
+    max-width: 500px;
+    margin: 50px auto 0px;
     #flag{
         max-width: 50%;
         margin: 20px 25%;
     }
     h2{
         text-align: center;
+        margin-bottom: 10px;
+    }
+    #icoregi{
+        width: 25px;
+        margin: 0 5px 7px 0;
     }
 }
 #docs #element{
@@ -599,6 +611,7 @@ html, body {
     text-align: center;
 }
 #docs #button-wrap{
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -643,7 +656,8 @@ html, body {
     }
     #button:hover #button__icon {
         width: 148px;
-        transform: translateX(55px);
+        transform: translateX(47px);
+        text-align: center;
     }
     #button:active #button__icon {
         background: linear-gradient(45deg, #007D45, #00521f);

@@ -3,10 +3,8 @@ function toggleMenu() {
   const btn = document.getElementById('menu-btn')
   if (menu.style.left === '-250px') {
     menu.style.left = '0';
-    btn.style.width = '250px';
   } else {
     menu.style.left = '-250px';
-    btn.style.width = '105px'
   }
 }
 
@@ -20,7 +18,7 @@ function downloadDocuments(nom) {
 }
 
 function registerMun(lng){
-  if (lng === "EN") {
+  if (lng === 'en') {
     window.open("https://docs.google.com/forms/d/e/1FAIpQLSewkJ_-bIDBAOy204Jz51rcxLKGvVYYsPnEginEhoc3rq9ZLw/viewform?usp=sf_link");
   }
   else {

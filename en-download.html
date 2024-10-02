@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -25,26 +26,26 @@
         </a>
     </div>
 
-    <div id="wrap">
-        <div id="background">
-            <div id="frontpage">
+    <div class="wrap">
+        <div class="background">
+            <div class="frontpage">
                 <div class="row">
                     <div class="col-lg-4 col-md-12 col-xs-12">
-                        <div id="imagebox">
+                        <div class="imagebox">
                             <img src="img/logo.png" alt="LOGO CHAU'MUN">
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-12 col-xs-12">
-                        <div id="text">
+                        <div class="text">
                             <div>
-                                <div id="title">
+                                <div class="title">
                                     <h1>CHAU'MUN</h1>
                                 </div>
-                                <div id="subject">
-                                    <p><img src="img/icons/note.png" style="width: 20px; margin-right: 5px;">How can we deal with the consequences of rising sea levels and help societies adapt to this situation ?</p>
+                                <div class="subject">
+                                    <p><img src="img/icons/note.png" style="width: 20px; margin-right: 5px;" alt="Notes">How can we deal with the consequences of rising sea levels and help societies adapt to this situation ?</p>
                                 </div>
-                                <div id="date">
-                                    <p><img src="img/icons/calendar.png" style="width: 20px;margin-top: -4px;"> 19-21 march 2025</p> 
+                                <div class="date">
+                                    <p><img src="img/icons/calendar.png" style="width: 20px;margin-top: -4px;" alt="Calendar"> 19-21 march 2025</p> 
                                 </div>
                             </div>
                         </div>
@@ -53,94 +54,90 @@
             </div>
         </div>
 
-        <div class="container" id="invitation">
+        <div class="container invitation">
             <div class="row">
-                <div class="col-md-12 col-lg-4">
-                    <button onclick="invitation('en')" id="en" style="background-color: #004828;">Invitation to CHAU'MUN</button>
+                <div class="col-sm-12 col-md-4">
+                    <button onclick="invitation('en')" id="en">Invitation to CHAU'MUN</button>
                 </div>
-                <div class="col-md-12 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <button onclick="invitation('fr')" id="fr">Invitation au CHAU'MUN</button>
                 </div>
-                <div class="col-md-12 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <button onclick="invitation('de')" id="de">Einladung zum CHAU'MUN</button>
                 </div>
             </div>
-            <div id="frame">
+            <div class="frame">
                 <iframe src="doc/Invitation to Chaumun 2025.pdf" frameborder="0"></iframe>
             </div>
         </div>
 
-        <div id="transition">
+        <div class="transition">
             <img src="img/transition/top-left.png">
         </div>
-        <div id="register">
+        <div class="register">
             <h1>Registrations : </h1>
             <div class="row">
-                <div class="col-xs-12 col-lg-6">
-                    <div id="icon">
+                <div class="col-xs-12 col-lg-6 comite">
                         <button onclick="registerMun('fr')">
-                            <img src="img/flag-fr.png" id="flag">                       
-                            <h2><img src="img/icons/note.png" id="icoregi">French comity</h2>    
+                            <img src="img/flag-fr.png" class="flag">                       
+                            <h2><img src="img/icons/note.png" class="icoregi">French comity</h2>    
                         </button>
-                    </div>
                 </div>
-                <div class="col-xs-12 col-lg-6">
-                    <div id="icon">
+                <div class="col-xs-12 col-lg-6 comite">
                         <button onclick="registerMun('en')">
-                            <img src="img/flag-en.png" id="flag">
-                            <h2><img src="img/icons/note.png" id="icoregi">English comity</h2>
+                            <img src="img/flag-en.png" class="flag">
+                            <h2><img src="img/icons/note.png" class="icoregi">English comity</h2>
                         </button>
-                    </div>
                 </div>
             </div> 
         </div>
-        <div id="transition">
+        <div class="transition">
             <img src="img/transition/bottom-right.png">
         </div>
 
-        <div id="docs">
+        <div class="docs">
             <h1>Interesting documens :</h1>
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <div id="element">
-                        <h3 id="text">Student's schedule :</h3>
-                        <a id="button-wrap" href="doc/Provisionnal schedule 2402.pdf">
-                            <button id="button" type="button">
-                                <span id="button__text">Download</span>
-                                <span id="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+                    <div class="element">
+                        <h3 class="text">Student's schedule :</h3>
+                        <a class="button-wrap" href="doc/Provisionnal schedule 2402.pdf">
+                            <button class="button" type="button">
+                                <span class="button__text">Download</span>
+                                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
                             </button>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <div id="element">
-                        <h3 id="text">Teacher's schedule :</h3>
-                        <a id="button-wrap" href="doc/Provisionnal schedule teachers 2401 (1).pdf">
-                            <button id="button" type="button">
-                                <span id="button__text">Download</span>
-                                <span id="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+                    <div class="element">
+                        <h3 class="text">Teacher's schedule :</h3>
+                        <a class="button-wrap" href="doc/Provisionnal schedule teachers 2401 (1).pdf">
+                            <button class="button" type="button">
+                                <span class="button__text">Download</span>
+                                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
                             </button>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <div id="element">
-                        <h3 id="text">Presentation flyers :</h3>
-                        <a id="button-wrap" href="doc/Flyer présentation.pdf">
-                            <button id="button" type="button">
-                                <span id="button__text">Download</span>
-                                <span id="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+                    <div class="element">
+                        <h3 class="text">Presentation flyers :</h3>
+                        <a class="button-wrap" href="doc/Flyer présentation.pdf">
+                            <button class="button" type="button">
+                                <span class="button__text">Download</span>
+                                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
                             </button>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <div id="element">
-                        <h3 id="text">Collection of 2024 :</h3>
-                        <a id="button-wrap" href="doc/MEP_Livret_MUN 2024.pdf">
-                            <button id="button" type="button">
-                                <span id="button__text">Download</span>
-                                <span id="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+                    <div class="element">
+                        <h3 class="text">Collection of 2024 :</h3>
+                        <a class="button-wrap" href="doc/MEP_Livret_MUN 2024.pdf">
+                            <button class="button" type="button">
+                                <span class="button__text">Download</span>
+                                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
                             </button>
                         </a>
                     </div>
@@ -152,27 +149,27 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-6" id="col">
+            <div class="col-sm-12 col-md-6 column">
                 <div class="link-container">
-                    <div id="link">
+                    <div class="link">
                         Instagram : <a href="https://www.instagram.com/chaumun.lcdg/">@chaumun.lcdg</a>
                     </div>
-                    <div id="link">
+                    <div class="link">
                         Site du lycée : <a class="a" href="https://www.lyceecdg52.com/">lyceecdg52.com</a>
                     </div>
-                    <div id="link">
+                    <div class="link">
                         Page MyMun : <a class="a" href="https://mymun.com/conferences/chaumun-2024">mymun.com</a>
                     </div>
-                    <div id="link">
+                    <div class="link">
                         Adresse mail : <b>chaumun.lcdg@gmail.com</b>
                     </div>
-                    <div id="link">
+                    <div class="link">
                         Numéro du président : 
                         <b>+33 6 24 08 43 97</b>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6" id="col">
+            <div class="col-sm-12 col-md-6 column">
                 <iframe loading="lazy" src="https://maps.google.com/maps?q=Lyc%C3%A9e%20charles%20de%20gaulle%20chaumont&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" title="Lycée charles de gaulle chaumont" aria-label="Lycée charles de gaulle chaumont"></iframe>
             </div> 
         </div>

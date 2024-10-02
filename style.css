@@ -3,31 +3,13 @@
     src: url("font/DinaChaumont-TextRegular.otf") format("opentype");
 }
 
-
-#welcome{
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     height: 100%;
-    background: url("img/viaduc.png") center no-repeat;
-    background-color: #111111C0;
-    color: white;
-    text-align: center;
-    #onit{
-        background-color: #111111C0;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-    h2{
-        padding-bottom: 50px;
-    }
-    img{
-        width: 100%;
-        max-width: 300px;
-    }
-    #flag{
-        padding: 10px;
-    }
+    overflow-x: hidden; 
 }
-
 h1{
     text-align: center;
 }
@@ -35,7 +17,7 @@ p{
     text-align: justify;
 }
 #new{
-    background-color: #ff0000; 
+    background-color: red; 
     color: white; 
     align-self: center;
     position: relative;
@@ -43,6 +25,10 @@ p{
     font-size:12px; 
     padding: 4px; 
     border-radius: 5px;
+}
+.wrap{
+    font-family: "DinaChaumont";
+    min-width: 250px;
 }
 
 
@@ -60,7 +46,7 @@ p{
     padding: 10px 15px;
     text-decoration: none;
     font-size: 18px;
-    color: #fff;
+    color: white;
     display: block;
     transition: 0.3s;
 }
@@ -84,29 +70,47 @@ p{
     width: 50px;
 }
 
-
-#wrap{
-    font-family: "DinaChaumont";
-    min-width: 250px;
+.welcome{
+    height: 100%;
+    background: url("img/bg.png") center no-repeat;
+    background-color: #111111C0;
+    color: white;
+    text-align: center;
+}
+.welcome .onit{
+    background-color: #111111C0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.welcome h2{
+    padding-bottom: 50px;
+}
+.welcome img{
+    width: 100%;
+    max-width: 300px;
+}
+.welcome .flag{
+    padding: 10px;
 }
 
-#background{
+.background{
     max-width: 100%;
     background: url("img/bg.png") no-repeat center;
 }
-#frontpage{
+.frontpage{
     width: 100%;
     padding: 5%;
     background-color: #111111C0;
 }
-#frontpage img{
+.frontpage img{
     width: 100%;
     max-width: 400px;
 }
-#frontpage #imagebox{
+.frontpage .imagebox{
     text-align: center;
 }
-#frontpage #text{
+.frontpage .text{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,22 +118,22 @@ p{
     height: 100%;
     padding-left: 25px;
 }
-#frontpage h1{
+.frontpage h1{
     text-align: left;
 }
 
 
-#credits{
+.credits{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
 /* TRANSITIONS */
-#transition{
+.transition{
     display: flex;
 }
-#transition img{
+.transition img{
     width: 100%;
 }
 
@@ -137,7 +141,7 @@ p{
 /* FOOTER */
 footer{
     background-color: #111;
-    color: #fff;
+    color: white;
     display: flex;
     text-align: center;
     align-items: center;
@@ -150,14 +154,14 @@ footer a{
     color: #fff;
     font-weight: bold;
 }
-footer #col{
+footer .column{
     display: grid;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     margin: 4% auto;
 }
-footer #link{
+footer .link{
     text-align: left;
 }
 footer iframe{
@@ -173,103 +177,104 @@ footer iframe{
 
 
 /* HOME */
-#description{
-    padding: auto 2% 50px 2%;
+.description{
+    padding: 0px 2% 50px 2%;
     text-align: justify;
     background-color: #007D45;
-    color: #fff;
-    a{
-        color: #ddd;
-    }
+    color: white;
 }
-#description #icon{
+.description a{
+    color: lightgrey;
+}
+.description .icon{
     display: flex;
     justify-content: center;
     width: 100%;
     padding-bottom: 20px;
 }
-#description #icon img{
+.description .icon img{
     width: 50px;
 }
-#whatisit{
+.whatisit{
     margin-top: 50px;
     padding: 3%;
 }
-#description #block{
+.description .block{
     display: grid;
     text-align: center;
     align-items: center;
     height: 100%;
-    margin: 50px 1% none;
+    margin: 50px 1% 0px;
     padding: 3%;
-    font-size: 30;
-    line-height: normal;
+
+
 }
 
-#keynum{
+.keynum{
     margin: 100px auto 100px;
 }
-#keynum h1{
+.keynum h1{
     padding-bottom: 50px;
 }
-#keynum #element{
+.keynum .element{
     text-align: center;
     max-width: 400px;
     height: 90%;
     margin: 1% auto;
     padding: 3% 0px;
-    font-size: 30;
+    font-size: 20px;
     background: linear-gradient(45deg, #007D45, #00521f);
-    color: #fff;
+    color: white;
     border-radius: 10px;
 }
 
-#actions #element{
+.actions .element{
     margin-bottom: 20px;
     padding: 20px;
     background-color: #D4D4D4;
 }
-#actions p{
+.actions p{
     text-align: justify;
 }
-#actions img{
+.actions img{
     width: 100%;
     padding-bottom: 20px;
 }
 
-#prices{
-    margin: 100px auto 100px;
+.prices{
+    padding: 50px 0 ;
     background-color: #007D45;
-    color: #fff;
+    color: white;
 }
-#prices #icon{
+.prices .icon{
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 20px auto;
+    padding: 20px 0px;
     margin-top: 20px;
 }
-#prices #icon img{
+.prices .icon img{
     width: 50px;
 }
-#prices #title{
+.prices .title{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
-#prices #desk{
+.prices .desk{
     text-align: justify;
 }
 
-#partenaires{
+.partenaires{
     text-align: center;
+    margin-top: 50px;
 }
-#partenaires img{
+.partenaires img{
     padding: 10px 10% 10px 10%;
     max-width: 400px;
     width: 100%;
 }
-#partenaires #item{
+.partenaires .item{
     height: 100%;
     display: flex;
     align-items: center;
@@ -288,105 +293,105 @@ footer iframe{
 
 
 /* TEAM */
-#kami{
+.kami{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#kami #card{
+.kami .box{
     align-items: center;
     align-content: center;
 }
-#kami img{
+.kami img{
     max-width:50%;
 }
-#kami #text{
+.kami .text{
     padding: 2%;
     display: grid;
     align-items: center;
 }
-#kami #name{
+.kami .name{
     font-size: 25px;
     font-weight: bold;
 }
-#kami #special{
+.kami .special{
     text-align: justify;
     align-content: center;
 }
 
 
-#secr{
+.secr{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#secr #card{
+.secr .box{
     align-items: center;
     align-content: center;
 }
-#secr img{
+.secr img{
     max-width:50%;
 }
-#secr #text{
+.secr .text{
     padding: 2%;
     display: grid;
     align-items: center;
 }
-#secr #name{
+.secr .name{
     font-size: 25px;
     font-weight: bold;
 }
-#secr #saying{
-    text-align: centera;
+.secr .saying{
+    text-align: center;
     align-content: center;
     font-style: italic;
 }
 
 
 
-#bureau{
+.bureau{
     text-align: center;
     background-color: #007D45;
-    color: #fff;
+    color: white;
 }
-#bureau #card{
+.bureau .box{
     padding: 1%;
     justify-content: center;
 }
-#bureau #card img{
+.bureau img{
     max-width: 200px;
     padding-right: 10px;
     padding-left: 10px;
 }
-#bureau #text{
+.bureau .text{
     align-content: center;
 }
-#bureau #name{
+.bureau .name{
     font-weight: bold;
-    font-size: 30;
+
 }
-#bureau #role{
+.bureau .role{
     font-style: italic;
 } 
 
 
-#ca{
+.ca{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#ca img{
+.ca img{
     max-width: 100px;
 }
-#ca #text{
+.ca .text{
     text-align: center;
     display: grid;
 }
-#ca #name{
+.ca .name{
     font-weight: bold;
-    font-size: 20;
+    font-size: 20px;
 }
-#ca #role{
+.ca .role{
     font-style: italic;
     width: 70%;
     justify-self: center;
@@ -406,33 +411,33 @@ footer iframe{
 
 
 /* SCHOOL */
-#top{
+.top{
     width: 100%;
     display: flex;
     justify-content: center;
-    img{
-        width: 50%;
-    }
 }
-#school{
+.top img{
+    width: 50%;
+}
+.school{
     background-color: #007D45;
-    color: #fff;
+    color: white;
 }
-#school #icons{
+.school .icons{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#school img{
+.school img{
     max-width: 100px;
 
 }
-#school h2{
-    color:#eeeeee;
+.school h2{
+    color: lightgray;
     text-decoration:underline;
 }
-#school #option{
+.school .option{
     margin: 20px;
     display: inline;
     align-items: center;
@@ -447,22 +452,23 @@ footer iframe{
 
 
 /* CITY */
-#city h2{
+.city h2{
     text-align: center;
     color: #004525;
     margin-top: 20px;
 }
-#city #photo{
+.city .photo{
     margin: 10px;
     text-align: center;
     color: #007D45;
     font-weight: bold;
-    img{
-        width: 100%;
-        color: darkgray;
-        font-weight: normal;
-    }
 }
+.city img{
+    width: 100%;
+    color: darkgray;
+    font-weight: normal;
+}
+
 
 
 
@@ -481,18 +487,20 @@ footer iframe{
 
 
 /* ARCHIVE */
-#vert{
-    width: 100vw;
+.vert{
+    width: 100%;
     height :23%;
     display: flex;
-    margin-bottom: none;
-    padding-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
     background-color: #007D45;
     justify-content: center;
-    color: #fff;
+    color: white;
 }
-
-#chaumun-2024{
+.vert img{
+    max-width: 100%;
+}
+.chaumun-2024{
     width: 100%;
     height: 100%;
     display: flex;
@@ -501,73 +509,47 @@ footer iframe{
     transform: scaleX(1);
 }
 
-[id^="branch"]{
+[class^="branch"]{
     display: flex;
     align-items: center; 
 }
-[id^="branch"] img{
-text-align: center;
-    max-height: 80%;
+[class^="branch"] img{
+    text-align: center;
+    max-width: 30%;
     transform: scaleX(1);
 }
 
 
-#gene{
+.gene{
     padding: 100px 0;
     background-color: #007D45;
     color: white;
-    img{
-        width: 100%;
-    }
+}
+.gene img{
+    width: 100%;
 }
 [class^="exp-comity"]{
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
-}
-#exp-comity img{
-    width: 100%;
-}
-#block-photos h1{
-    text-align: center;
-    margin-top: 30px;
-}
-#block-photos h2{
-    text-align: center;
-    margin-top: 30px;
-}
-#block-photos img{
-    width: 100%;
-    margin-bottom: 5px;
-}
-#exp-comity-en{
     padding: 15px 20px;
 }
-#exp-comity-fr{
-    padding: 15px 20px;
-}
-
-#block-activites{
+.event [class*="block"]{
     display: grid;
     align-items: end;
 }
-#activites img{
+.block-photos h1,h2{
+    text-align: center;
+    margin-top: 30px;
+}
+.event img{
     width: 100%;
     margin-bottom: 5px;
 }
-html, body {
-
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; 
-}
-#ch-2024{
+.ch-2024{
     display: inline;
 }
-#background {
-
+.background{
     width: 100vw;
     background-size: cover;
     background-position: center;
@@ -575,120 +557,124 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-#text-comite{
+.text-comite{
     text-align: center;
 }
 
 
 
 /*DOWNLOAD*/
-#invitation{
+.invitation{
     margin: 50px auto 50px;
     text-align: center;
 }
-#invitation button{
+.invitation #en{
+    background-color: #004828; /*changes by clicking on anthr button with js*/
+}
+.invitation button{
     background-color: #007D45;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
-    button:hover,button:active{
-        background-color: #009451;
-    }
 }
-#invitation #frame{
+.invitation button:hover,button:active{
+    background-color: #009451;
+}
+.invitation .frame{
     background-color: #aaaaaa;
     margin: 20px auto 20px;
-    height: 70%;
-    iframe{
-        width: 100%;
-        height: 100%;
-    }
+    height: 50rem;
 }
-#register{
+.invitation iframe{
+    width: 100%;
+    height: 100%;
+}
+.register{
     background-color: #007D45;
     color: white;
     padding-bottom: 50px;
-    button{
-        border: none;
-        padding: 0px;
-        background-color: #111111C0;
-        color: white;
-    }
 }
-#register #icon{
+.register button{
+    border: none;
+    padding: 0px;
+    background-color: #111111C0;
+    color: white;
+}
+.register .comite{
     max-width: 500px;
     margin: 50px auto 0px;
-    #flag{
-        max-width: 50%;
-        margin: 20px 25%;
-    }
-    h2{
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    #icoregi{
-        width: 25px;
-        margin: 0 5px 7px 0;
-    }
 }
-#docs #element{
+.register .comite .flag{
+    max-width: 50%;
+    margin: 20px 25%;
+}
+.register .comite h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.register .comite .icoregi{
+    width: 25px;
+    margin: 0 5px 7px 0;
+}
+
+.docs .element{
     margin: 20px auto;
 }
-#docs #text{
+.docs .text{
     text-align: center;
 }
-#docs #button-wrap{
+.docs .button-wrap {
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    #button {
-        position: relative;
-        width: 250px;
-        height: 80px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        border: none;
-        background: linear-gradient(45deg, #007D45, #00521f);
-        overflow: hidden;
-    }
-    #button, #button__icon, #button__text {
-        transition: all 0.3s;
-    }
-    #button #button__text {
-        transform: translateX(30px);
-        color: #fff;
-        font-weight: 600;
-    }
-    #button #button__icon {
-        position: absolute;
-        transform: translateX(165px);
-        height: 100%;
-        width: 79px;
-        background-color: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #button .svg{
-        width: 20px;
-        fill: #fff;
-    }
-    #button:hover {
-        background: linear-gradient(45deg, #007D45, #00521f);
-    }
-    #button:hover #button__text {
-        color: transparent;
-    }
-    #button:hover #button__icon {
-        width: 148px;
-        transform: translateX(47px);
-        text-align: center;
-    }
-    #button:active #button__icon {
-        background: linear-gradient(45deg, #007D45, #00521f);
-    }
+}
+.docs .button-wrap .button{
+    position: relative;
+    width: 250px;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: linear-gradient(45deg, #007D45, #00521f);
+    overflow: hidden;
+}
+.docs .button-wrap .button, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+.docs .button-wrap .button .button__text {
+    transform: translateX(30px);
+    color: white;
+    font-weight: 600;
+}
+.docs .button-wrap .button .button__icon {
+    position: absolute;
+    transform: translateX(165px);
+    height: 100%;
+    width: 79px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.docs .button-wrap .button .svg{
+    width: 20px;
+    fill: white;
+}
+.docs .button-wrap .button:hover {
+    background: linear-gradient(45deg, #007D45, #00521f);
+}
+.docs .button-wrap .button:hover .button__text {
+    color: transparent;
+}
+.docs .button-wrap .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(47px);
+    text-align: center;
+}
+.docs .button-wrap .button:active .button__icon {
+    background: linear-gradient(45deg, #007D45, #00521f);
 }

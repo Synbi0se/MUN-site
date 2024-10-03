@@ -97,6 +97,10 @@ p{
 .background{
     max-width: 100%;
     background: url("img/bg.png") no-repeat center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .frontpage{
     width: 100%;
@@ -491,8 +495,7 @@ footer iframe{
     width: 100%;
     height :23%;
     display: flex;
-    margin-bottom: 0px;
-    padding-bottom: 50px;
+    padding: 50px 0px 0px;
     background-color: #007D45;
     justify-content: center;
     color: white;
@@ -528,8 +531,10 @@ footer iframe{
 .gene img{
     width: 100%;
 }
-[class^="exp-comity"]{
-    text-align: center;
+.event{
+    margin-top: 50px;
+}
+.exp-comity{
     padding-left: 30px;
     padding-right: 30px;
     padding: 15px 20px;
@@ -538,27 +543,12 @@ footer iframe{
     display: grid;
     align-items: end;
 }
-.block-photos h1,h2{
-    text-align: center;
-    margin-top: 30px;
-}
 .event img{
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .ch-2024{
     display: inline;
-}
-.background{
-    width: 100vw;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.text-comite{
-    text-align: center;
 }
 
 

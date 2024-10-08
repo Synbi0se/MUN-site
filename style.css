@@ -10,7 +10,7 @@ html, body {
     height: 100%;
     overflow-x: hidden; 
 }
-h1{
+h1,h2{
     text-align: center;
 }
 p{
@@ -457,7 +457,6 @@ footer iframe{
 
 /* CITY */
 .city h2{
-    text-align: center;
     color: #004525;
     margin-top: 20px;
 }
@@ -601,7 +600,6 @@ footer iframe{
     margin: 20px 25%;
 }
 .register .comite h2{
-    text-align: center;
     margin-bottom: 10px;
 }
 .register .comite .icoregi{

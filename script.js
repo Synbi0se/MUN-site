@@ -1,7 +1,6 @@
 // function opening the side menu
 function toggleMenu() {
   const menu = document.getElementById('menu');
-  const btn = document.getElementById('menu-btn')
   if (menu.style.left === '-250px') {
     menu.style.left = '0';
   } else {
@@ -42,15 +41,15 @@ function invitation(language) {
   fr.style.backgroundColor = '#007D45';
   de.style.backgroundColor = '#007D45';
   if (language === 'en') {
-    box.innerHTML = '<iframe src="doc/Invitation to Chaumun 2025.pdf" frameborder="0"></iframe>' ;
+    box.innerHTML = '<iframe src="doc/Invitation_to_Chaumun_2025.pdf" frameborder="0"></iframe>' ;
     en.style.backgroundColor = '#004828';
   }
   if (language === 'fr') {
-    box.innerHTML = '<iframe src="doc/Invitation au Chaumun 2025.pdf" frameborder="0"></iframe>' ;
+    box.innerHTML = '<iframe src="doc/Invitation_au_Chaumun_2025.pdf" frameborder="0"></iframe>' ;
     fr.style.backgroundColor = '#004828';
   }
   if (language === 'de') {
-    box.innerHTML = '<iframe src="doc/Einladung zum Chaumun.pdf" frameborder="0"></iframe>' ;
+    box.innerHTML = '<iframe src="doc/Einladung_zum_Chaumun.pdf" frameborder="0"></iframe>' ;
     de.style.backgroundColor = '#004828';
   }
 }

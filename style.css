@@ -10,7 +10,7 @@ html, body {
     height: 100%;
     overflow-x: hidden; 
 }
-h1,h2{
+h2,h2{
     text-align: center;
 }
 p{
@@ -122,7 +122,7 @@ p{
     height: 100%;
     padding-left: 25px;
 }
-.frontpage h1{
+.frontpage h2{
     text-align: left;
 }
 
@@ -217,7 +217,7 @@ footer iframe{
 .keynum{
     margin: 100px auto 100px;
 }
-.keynum h1{
+.keynum h2{
     padding-bottom: 50px;
 }
 .keynum .element{

@@ -19,7 +19,6 @@ function downloadDocuments(nom) {
 }
 
 // function to register 
-// currently unavailable
 function registerMun(lng){
   if (lng === 'en') {
     // window.open("https://docs.google.com/forms/d/e/1FAIpQLSewkJ_-bIDBAOy204Jz51rcxLKGvVYYsPnEginEhoc3rq9ZLw/viewform?usp=sf_link");

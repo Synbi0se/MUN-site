@@ -602,13 +602,14 @@ footer iframe{
 .register .comite h2{
     margin-bottom: 10px;
 }
-.register .comite .icoregi{
+.register .comite .ico{
     width: 25px;
     margin: 0 5px 7px 0;
 }
 
 .docs .element{
     margin: 20px auto;
+    padding-bottom: 50px;
 }
 .docs .text{
     text-align: center;
@@ -665,4 +666,29 @@ footer iframe{
 }
 .docs .button-wrap .button:active .button__icon {
     background: linear-gradient(45deg, #007D45, #00521f);
+}
+
+.documentation{
+    padding-bottom: 50px;
+}
+.documentation button{
+    border: none;
+    padding: 0px;
+    background-color: #111111C0;
+    color: white;
+}
+.documentation .comite{
+    max-width: 500px;
+    margin: 50px auto 0px;
+}
+.documentation .comite .flag{
+    max-width: 50%;
+    margin: 20px 25%;
+}
+.documentation .comite h2{
+    margin-bottom: 10px;
+}
+.documentation .comite .ico{
+    width: 25px;
+    margin: 0 5px 7px 0;
 }

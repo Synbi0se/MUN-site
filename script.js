@@ -18,14 +18,18 @@ function downloadDocuments(nom) {
   document.body.removeChild(lien);
 }
 
+function accessDocs(lng){
+  // Aucune idée
+}
+
 // function to register 
 function registerMun(lng){
   if (lng === 'en') {
-    // window.open("https://docs.google.com/forms/d/e/1FAIpQLSewkJ_-bIDBAOy204Jz51rcxLKGvVYYsPnEginEhoc3rq9ZLw/viewform?usp=sf_link");
+    // window.open('');
   	alert("Currently unavailable, contact us at chaumun.lcdg@gmail.com")
   }
   else {
-    // window.open("https://docs.google.com/forms/d/e/1FAIpQLSfYGK3mRNtdHU3td72VgmclpRCcuZYbGdaNJpmpu32LjDAdIQ/viewform?usp=sf_link");
+    // window.open('');
   	alert("Insdisponible actuellement, contactez nous à chaumun.lcdg@gmail.com")
   }
 }

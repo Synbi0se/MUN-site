@@ -46,3 +46,15 @@ function registerMun(lng){
   }
 }
 
+function giveMeTheDocs(lng){
+  if (lng=='en') {
+    window.open('doc/ressources/en/Legal-Dimensions-of-Sea-Level-Rise-Pacific-Perspectives.pdf')
+    window.open('doc/ressources/en/The-Impact-of-Sea-Level-Rise-on-Developing-Countries.pdf')
+    window.open('doc/ressources/en/The-rate-of-global-sea-level-rise-doubled.pdf')
+    window.open('doc/ressources/en/WB-Kiribati-Country-Profile.pdf')
+    window.open('doc/ressources/en/Bibliography-sitography.docx')
+  }
+  else{
+    alert('Rien pour le moment... Nothing for now...')
+  }
+}

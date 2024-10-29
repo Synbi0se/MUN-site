@@ -8,32 +8,6 @@ function toggleMenu() {
   }
 }
 
-// function to download the documents in div.docs in ..-download.html 
-function downloadDocuments(nom) {
-  const lien = document.createElement('a');
-  lien.href = `https://synbi0se.github.io/MUN-site/doc/${nom}`;
-  lien.download = `https://synbi0se.github.io/MUN-site/doc/${nom}`;
-  document.body.appendChild(lien);
-  lien.click();
-  document.body.removeChild(lien);
-}
-
-function accessDocs(lng){
-  // Aucune idée
-}
-
-// function to register 
-function registerMun(lng){
-  if (lng === 'en') {
-    // window.open('');
-  	alert("Currently unavailable, contact us at chaumun.lcdg@gmail.com")
-  }
-  else {
-    // window.open('');
-  	alert("Insdisponible actuellement, contactez nous à chaumun.lcdg@gmail.com")
-  }
-}
-
 // function for the button in invitation in ..-download.html
 function invitation(language) {
   const box = document.getElementById('frame');
@@ -56,3 +30,19 @@ function invitation(language) {
     de.style.backgroundColor = '#004828';
   }
 }
+
+// function to open the documents in ..-download.html 
+function openDocs(name){
+  window.open(name)
+}
+
+// function to register 
+function registerMun(lng){
+  if (lng === 'en') {
+  	alert("Currently unavailable, contact us at chaumun.lcdg@gmail.com")
+  }
+  else { // aka fr
+  	alert("Insdisponible actuellement, contactez nous à chaumun.lcdg@gmail.com")
+  }
+}
+

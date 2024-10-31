@@ -8,7 +8,7 @@ function toggleMenu() {
   }
 }
 
-// function for the button in invitation in ..-download.html
+// function for the button in invitation in ..-docs.html
 function invitation(language) {
   const box = document.getElementById('frame');
   const en = document.getElementById('en');
@@ -31,7 +31,7 @@ function invitation(language) {
   }
 }
 
-// function to open the documents in ..-download.html 
+// function to open the documents in ..-docs.html 
 function openDocs(name){
   window.open(name)
 }

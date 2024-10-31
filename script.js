@@ -8,29 +8,6 @@ function toggleMenu() {
   }
 }
 
-// function for the button in invitation in ..-docs.html
-function invitation(language) {
-  const box = document.getElementById('frame');
-  const en = document.getElementById('en');
-  const fr = document.getElementById('fr');
-  const de = document.getElementById('de');
-  en.style.backgroundColor = '#007D45';
-  fr.style.backgroundColor = '#007D45';
-  de.style.backgroundColor = '#007D45';
-  if (language === 'en') {
-    box.innerHTML = '<iframe src="doc/Invitation_to_Chaumun_2025.pdf" frameborder="0"></iframe>' ;
-    en.style.backgroundColor = '#004828';
-  }
-  if (language === 'fr') {
-    box.innerHTML = '<iframe src="doc/Invitation_au_Chaumun_2025.pdf" frameborder="0"></iframe>' ;
-    fr.style.backgroundColor = '#004828';
-  }
-  if (language === 'de') {
-    box.innerHTML = '<iframe src="doc/Einladung_zum_Chaumun.pdf" frameborder="0"></iframe>' ;
-    de.style.backgroundColor = '#004828';
-  }
-}
-
 // function to open the documents in ..-docs.html 
 function openDocs(name){
   window.open(name)

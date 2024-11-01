@@ -681,3 +681,7 @@ footer iframe{
     width: 25px;
     margin: 0 5px 7px 0;
 }
+.documentation .version{
+    text-align: center;
+    font-style: italic;
+}

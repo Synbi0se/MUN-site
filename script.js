@@ -16,13 +16,14 @@ function openDocs(name){
 // function to register 
 function registerMun(lng){
   if (lng === 'en') {
-  	alert("Currently unavailable, contact us at chaumun.lcdg@gmail.com");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSeUniZZ7U4VkodAhQEj9PAaJqHmQQDrlnRqKume9MSvD_VzAw/viewform");
   }
   else { // aka fr
-  	alert("Insdisponible actuellement, contactez nous à chaumun.lcdg@gmail.com");
+  	window.open("https://docs.google.com/forms/d/e/1FAIpQLSclhP-3-5QGQQW0F7qYrmo_QeC3l8o711TbNGzw6qu4Ddv-6g/viewform");
   }
 }
 
+// function to prevent the user a button is not working
 function alert(lng){
   if (lng === 'en') {
   	alert("Nothing for now...");

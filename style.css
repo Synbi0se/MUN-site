@@ -660,28 +660,48 @@ footer iframe{
 .documentation{
     padding-bottom: 50px;
 }
-.documentation button{
-    border: none;
-    padding: 0px;
+.documentation a{
     background-color: #111111C0;
     color: white;
-}
-.documentation .comite{
-    max-width: 500px;
-    margin: 50px auto 0px;
-}
-.documentation .comite .flag{
-    max-width: 50%;
-    margin: 20px 25%;
-}
-.documentation .comite h2{
-    margin-bottom: 10px;
-}
-.documentation .comite .ico{
-    width: 25px;
-    margin: 0 5px 7px 0;
-}
-.documentation .version{
+    width: 80%;
+    padding: 40px;
+    margin: 40px auto 0;
+    display: block;
     text-align: center;
-    font-style: italic;
+    text-decoration: none;
+    font-size: larger;
+}
+
+
+
+
+.download{
+    color:#004525;
+}
+.download .top{
+    background-color: #007D45;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.download .title,.button,.date,.lng{
+    text-align: center;
+    padding: 5px;
+}
+.download .lng img{
+    width: 100%;
+    max-width: 40px;
+}
+.download .odd{
+    background-color: #D4D4D4;
+}
+.download button{
+    cursor:pointer;
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    height: 20px;
+}
+.dol svg{
+    width: 20px;
 }

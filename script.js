@@ -16,10 +16,12 @@ function openDocs(name){
 // function to register 
 function registerMun(lng){
   if (lng === 'en') {
-    window.open("https://docs.google.com/forms/d/e/1FAIpQLSeUniZZ7U4VkodAhQEj9PAaJqHmQQDrlnRqKume9MSvD_VzAw/viewform");
+    // window.open("https://docs.google.com/forms/d/e/1FAIpQLSeUniZZ7U4VkodAhQEj9PAaJqHmQQDrlnRqKume9MSvD_VzAw/viewform");
+    alert("Contact us at chaumun.lcdg@gmail.com")
   }
   else { // aka fr
-  	window.open("https://docs.google.com/forms/d/e/1FAIpQLSclhP-3-5QGQQW0F7qYrmo_QeC3l8o711TbNGzw6qu4Ddv-6g/viewform");
+  	// window.open("https://docs.google.com/forms/d/e/1FAIpQLSclhP-3-5QGQQW0F7qYrmo_QeC3l8o711TbNGzw6qu4Ddv-6g/viewform");
+    alert("Contactez nous à chaumun.lcdg@gmail.com")
   }
 }
 

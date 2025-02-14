@@ -89,7 +89,7 @@ p{
 .welcome img{
     width: 100%;
     max-width: 300px;
-    box-shadow: -5px 5px 5px #111 ;
+    box-shadow: -20px 20px 30px #111 ;
 }
 .welcome .flag{
     padding: 10px;
@@ -226,15 +226,17 @@ footer iframe{
     margin: 1% auto;
     padding: 3% 0px;
     font-size: 20px;
-    background: linear-gradient(45deg, #007D45, #00521f);
+    background: linear-gradient(45deg, #007D45, #00521F);
     color: white;
     border-radius: 10px;
+    box-shadow: -5px 5px 20px #00521F;
 }
 
 .actions .element{
     margin-bottom: 20px;
     padding: 20px;
     background-color: #D4D4D4;
+    box-shadow: -5px 5px 20px #B4B4B4;
 }
 .actions p{
     text-align: justify;
@@ -304,7 +306,8 @@ footer iframe{
     align-content: center;
 }
 .kami img{
-    max-width:50%;
+    width: 200px;
+    box-shadow: -5px 5px 5px #888;
 }
 .kami .text{
     padding: 2%;
@@ -320,35 +323,6 @@ footer iframe{
     align-content: center;
 }
 
-
-.secr{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.secr .box{
-    align-items: center;
-    align-content: center;
-}
-.secr img{
-    max-width:50%;
-}
-.secr .text{
-    padding: 2%;
-    display: grid;
-    align-items: center;
-}
-.secr .name{
-    font-size: 25px;
-    font-weight: bold;
-}
-.secr .saying{
-    text-align: center;
-    align-content: center;
-    font-style: italic;
-}
-
-
 .bureau{
     text-align: center;
     background-color: #007D45;
@@ -360,20 +334,46 @@ footer iframe{
 }
 .bureau img{
     max-width: 200px;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: -5px 5px 5px #00521F;
 }
 .bureau .text{
     align-content: center;
 }
 .bureau .name{
     font-weight: bold;
-
 }
 .bureau .role{
     font-style: italic;
 } 
 
+.secr{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.secr .box{
+    align-items: center;
+    align-content: center;
+}
+.secr img{
+    width: 150px;
+    margin-bottom: 10px;
+    box-shadow: -5px 5px 5px #888;
+}
+.secr .text{
+    padding: 2%;
+    display: grid;
+    align-items: center;
+}
+.secr .role{
+    font-size: 30px;
+    font-weight: bold;
+}
+.secr .name{
+    font-size: 25px;
+    font-weight: bold;
+}
 
 .ca{
     text-align: center;
@@ -382,6 +382,8 @@ footer iframe{
 }
 .ca img{
     max-width: 100px;
+    margin-bottom: 10px;
+    box-shadow: -5px 5px 5px #888;
 }
 .ca .text{
     text-align: center;
@@ -618,7 +620,7 @@ footer iframe{
     display: flex;
     align-items: center;
     border: none;
-    background: linear-gradient(45deg, #007D45, #00521f);
+    background: linear-gradient(45deg, #007D45, #00521F);
     overflow: hidden;
 }
 .docs .button-wrap .button, .button__icon, .button__text {
@@ -644,7 +646,7 @@ footer iframe{
     fill: white;
 }
 .docs .button-wrap .button:hover {
-    background: linear-gradient(45deg, #007D45, #00521f);
+    background: linear-gradient(45deg, #007D45, #00521F);
 }
 .docs .button-wrap .button:hover .button__text {
     color: transparent;
@@ -655,7 +657,7 @@ footer iframe{
     text-align: center;
 }
 .docs .button-wrap .button:active .button__icon {
-    background: linear-gradient(45deg, #007D45, #00521f);
+    background: linear-gradient(45deg, #007D45, #00521F);
 }
 
 .documentation{

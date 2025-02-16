@@ -17,11 +17,11 @@ function openDocs(name){
 function registerMun(lng){
   if (lng === 'en') {
     // window.open("https://docs.google.com/forms/d/e/1FAIpQLSeUniZZ7U4VkodAhQEj9PAaJqHmQQDrlnRqKume9MSvD_VzAw/viewform");
-    alert("Contact us at chaumun.lcdg@gmail.com")
+    alert("Contact us at chaumun.lcdg@gmail.com");
   }
   else { // aka fr
   	// window.open("https://docs.google.com/forms/d/e/1FAIpQLSclhP-3-5QGQQW0F7qYrmo_QeC3l8o711TbNGzw6qu4Ddv-6g/viewform");
-    alert("Contactez nous à chaumun.lcdg@gmail.com")
+    alert("Contactez nous à chaumun.lcdg@gmail.com");
   }
 }
 
@@ -33,4 +33,10 @@ function alert(lng){
   else { // aka fr
   	alert("Rien pour le moment...");
   }
+}
+
+// easter egg
+function louis(){
+  const logo = document.getElementById('L');
+  logo.innerHTML = '<img src="https://raw.githubusercontent.com/Synbi0se/logo-MUN/refs/heads/main/logo_louis.png" alt="LOGO CHAU\'MUN">'
 }

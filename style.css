@@ -213,6 +213,14 @@ footer iframe{
     padding: 3%;
 }
 
+.year{
+    margin-top: 50px;
+}
+.year img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .keynum{
     margin: 100px auto 100px;
 }

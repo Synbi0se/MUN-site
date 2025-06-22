@@ -1,18 +1,23 @@
+@font-face{
+    font-family: "DinaChaumont";
+    src: url("DinaChaumont.otf") format("opentype");
+}
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
-h1,h2{
+h1,h2,h3{
     text-align: center;
 }
 p{
     text-align: justify;
 }
-body{
-    height : 100%;
+.all{
+    font-family: 'DinaChaumont';
 }
 .a{
     color: #fff;
@@ -79,47 +84,64 @@ body{
     text-align: center;
     border-color: red;
     padding-bottom: 5%;
+    
 }
 .band-link{
     padding: 10px 0;
+    max-height: 50px;
     color: #fff;
 }
+.band-link img{
+    width: auto;
+    height: 100%;
+    margin: 0 5px;
+}
 .band-link:hover{
-    background-color: #111111d0;
+    background-color: #111111ca;
 }
 
 /* =====================================================
                       HOME PAGE
 ======================================================*/
+.wmun{
+    margin: 50px 0 0 0;
+}
+.wmun-icon{
+    text-align: center;
+}
+.wmun-icon img{
+    width: 75px;
+}
 .key{
     margin: 100px auto 100px;
 }
 .key h2{
     padding-bottom: 50px;
 }
-.keynum{
+.key-element{
     text-align: center;
     max-width: 400px;
     margin: 12px auto;
-    padding: 3% 0;
+    padding: 3% 15px;
     font-size: 20px;
-    background: linear-gradient(45deg, #007D45, #00521F);
-    color: white;
-    border-radius: 10px;
-    box-shadow: -5px 5px 20px #00521F;
+    background: #d4d4d4;
+    box-shadow: -3px 3px 10px #b4b4b4;
 }
-.keyaction{
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #D4D4D4;
-    box-shadow: -5px 5px 20px #B4B4B4;
-}
-.keyaction p{
+.key-element p{
     text-align: justify;
 }
-.keyaction img{
+.key-element img{
     width: 100%;
     padding-bottom: 20px;
+}
+.key-element:hover{
+    box-shadow: -3px 3px 10px #5e5e5e;
+}
+.sponsors-element{
+    margin-bottom: 20px;
+}
+.sponsors-element img{
+    width: 100%;
 }
 
 /* =====================================================

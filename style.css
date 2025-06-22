@@ -19,7 +19,7 @@ p{
 .all{
     font-family: 'DinaChaumont';
 }
-.a{
+[class*="link"]{
     color: #fff;
     text-decoration: none;
 }
@@ -63,10 +63,12 @@ p{
 }
 .vitrine-glass{
     background-color: #111111c0;
-    padding: 0 5% 5%;
 }
 .vitrine img{
     width: 100%;
+}
+.vitrine-div{
+    padding: 0 50px 50px;
 }
 .vitrine-pedestal img{
     max-width: 400px;
@@ -82,9 +84,8 @@ p{
 
 .band{
     text-align: center;
-    border-color: red;
-    padding-bottom: 5%;
-    
+    margin-bottom: 5%;
+    background-color: #111111ca;
 }
 .band-link{
     padding: 10px 0;
@@ -97,8 +98,16 @@ p{
     margin: 0 5px;
 }
 .band-link:hover{
-    background-color: #111111ca;
+    background-color: #313131ca;
+    cursor: pointer;
 }
+#openus{
+    text-align: left;
+    position:absolute;
+    width: 200px;
+    background: #111111ca;
+}
+
 
 /* =====================================================
                       HOME PAGE

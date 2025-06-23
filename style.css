@@ -23,6 +23,9 @@ p{
     color: #fff;
     text-decoration: none;
 }
+.trans img{
+    width: 100%;
+}
 
 
 /* =====================================================
@@ -88,32 +91,66 @@ p{
     background-color: #111111ca;
 }
 .band-link{
-    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
     max-height: 50px;
+    padding: 0px;
     color: #fff;
 }
 .band-link img{
-    width: auto;
-    height: 100%;
     margin: 0 5px;
+    width: 50px;
 }
 .band-link:hover{
     background-color: #313131ca;
-    cursor: pointer;
 }
-#openus{
-    text-align: left;
-    position:absolute;
-    width: 200px;
-    background: #111111ca;
+.btn{
+    color: #fff;
+    border: none;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+.btn:hover{
+    border: none;
+}
+.dropdown-menu{
+    background-color: #111111ca;
+}
+.dropdown-item{
+    color: #fff;
+}
+.dropdown-item:hover{
+    background-color: #313131ca;
+    color: #fff;
+}
+.band-lng{
+    padding: 8px;
 }
 
 
 /* =====================================================
-                      HOME PAGE
+                        HOME
 ======================================================*/
+#sponsors{
+    margin: 30px 10px;
+}
+.sponsors-element{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.sponsors-element img{
+    max-width: 150px;
+    width: fit-content;
+
+}
 .wmun{
-    margin: 50px 0 0 0;
+    background: #007d45;
+    color: #fff;
 }
 .wmun-icon{
     text-align: center;
@@ -132,7 +169,6 @@ p{
     max-width: 400px;
     margin: 12px auto;
     padding: 3% 15px;
-    font-size: 20px;
     background: #d4d4d4;
     box-shadow: -3px 3px 10px #b4b4b4;
 }
@@ -146,13 +182,52 @@ p{
 .key-element:hover{
     box-shadow: -3px 3px 10px #5e5e5e;
 }
-.sponsors-element{
-    margin-bottom: 20px;
+.price{
+    background: #007d45;
+    color: #fff;
 }
-.sponsors-element img{
+.price-icon{
+    display: flex;
+    justify-content: center;
     width: 100%;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+.price-icon img{
+    width: 70px;
+}
+.price-title{
+    font-weight: bold;
+    text-align: center;
+}
+.price-text{
+    text-align: justify;
 }
 
+/* =====================================================
+                        TEAM
+======================================================*/
+.kami{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.kami-box{
+    align-items: center;
+    align-content: center;
+}
+.kami img{
+    width: 200px;
+    box-shadow: -5px 5px 5px #888;
+}
+.kami-text{
+    padding: 2%;
+    display: grid;
+    align-items: center;
+}
+.kami h3{
+    font-style: italic;
+}
 /* =====================================================
                         FOOTER
 ======================================================*/

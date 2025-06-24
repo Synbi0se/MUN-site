@@ -104,6 +104,7 @@ p{
     padding: 0px;
     color: #fff;
     text-decoration: none;
+    font-style: normal;
 }
 .band-link img{
     margin: 0 5px;
@@ -134,7 +135,6 @@ p{
 }
 .band-lng{
     padding: 8px;
-    font-style: normal;
 }
 
 /* =====================================================

@@ -21,7 +21,8 @@ p{
 }
 [class*="link"]{
     color: #fff;
-    text-decoration: none;
+    /* text-decoration: none; */
+    font-style: italic;
 }
 .trans img{
     width: 100%;
@@ -71,24 +72,28 @@ p{
     width: 100%;
 }
 .vitrine-div{
-    padding: 0 50px 50px;
+    padding: 50px;
 }
-.vitrine-pedestal img{
+.vitrine-pedestal{
+    text-align: center;
+}
+.vitrine-div img{
+    width: 100%;
     max-width: 400px;
 }
 .vitrine-text{
     display: flex;
+    flex-direction:column;
     justify-content: center;
-    align-self: center;
     color: white;
-    height: 100%;
     padding-left: 25px;
 }
-
+.vitrine-title{
+    text-align: left;
+}
 .band{
     text-align: center;
-    margin-bottom: 5%;
-    background-color: #111111ca;
+    background-color: #11111178;
 }
 .band-link{
     display: flex;
@@ -98,6 +103,7 @@ p{
     max-height: 50px;
     padding: 0px;
     color: #fff;
+    text-decoration: none;
 }
 .band-link img{
     margin: 0 5px;
@@ -117,7 +123,7 @@ p{
     border: none;
 }
 .dropdown-menu{
-    background-color: #111111ca;
+    background-color: #11111178;
 }
 .dropdown-item{
     color: #fff;
@@ -128,8 +134,8 @@ p{
 }
 .band-lng{
     padding: 8px;
+    font-style: normal;
 }
-
 
 /* =====================================================
                         HOME
@@ -146,7 +152,6 @@ p{
 .sponsors-element img{
     max-width: 150px;
     width: fit-content;
-
 }
 .wmun{
     background: #007d45;
@@ -157,6 +162,30 @@ p{
 }
 .wmun-icon img{
     width: 75px;
+}
+.price{
+    background: #007d45;
+    color: #fff;
+}
+.price h2{
+    padding: 50px 0 42px;
+}
+.price-icon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.price-icon img{
+    width: 70px;
+}
+.price-title{
+    font-weight: bold;
+    text-align: center;
+}
+.price-text{
+    text-align: justify;
+    padding-bottom: 20px;
 }
 .key{
     margin: 100px auto 100px;
@@ -182,27 +211,6 @@ p{
 .key-element:hover{
     box-shadow: -3px 3px 10px #5e5e5e;
 }
-.price{
-    background: #007d45;
-    color: #fff;
-}
-.price-icon{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px 0px;
-    margin-top: 20px;
-}
-.price-icon img{
-    width: 70px;
-}
-.price-title{
-    font-weight: bold;
-    text-align: center;
-}
-.price-text{
-    text-align: justify;
-}
 
 /* =====================================================
                         TEAM
@@ -216,8 +224,9 @@ p{
     align-items: center;
     align-content: center;
 }
-.kami img{
-    width: 200px;
+.kami img, .staff-indiv img{
+    width: 100%;
+    max-width: 200px;
     box-shadow: -5px 5px 5px #888;
 }
 .kami-text{
@@ -228,6 +237,43 @@ p{
 .kami h3{
     font-style: italic;
 }
+.team{
+    background: #007d45;
+    color: #fff;
+}
+.team h2, .staff h2{
+    margin-bottom: 50px;
+}
+.team img{
+    /* : #777; ------------------------- */
+    width: 100%;
+    max-width: 200px;
+    box-shadow: -5px 5px 5px #00331c;
+}
+.team-student, .staff-indiv{
+    text-align: center;
+}
+.team-name, .staff-name{
+    width: 100%;
+    text-align: inherit;
+    margin: 10px 0 0;
+}
+.team-role, .staff-role{
+    width: 100%;
+    text-align: inherit;
+    font-style: italic;
+}
+.kami img:hover, .staff img:hover{
+    max-width: 205px;
+    box-shadow: -10px 10px 10px #777;
+    transition: 0.5s 0.3s;
+}
+.team img:hover{
+    max-width: 205px;
+    box-shadow: -10px 10px 10px #001a0e;
+    transition: 0.5s 0.3s;
+}
+
 /* =====================================================
                         FOOTER
 ======================================================*/
@@ -242,20 +288,17 @@ footer{
     padding-top: 2%;
     padding-bottom: 2%;
 }
-footer a{
-    color: #fff;
-    font-weight: bold;
-}
 .footer-column{
     display: grid;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    margin: 4% auto;
 }
 .footer-link{
     text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
 }
 footer iframe{
     background-color: gray;
+    max-width: 400px;
+    height: 100%;
 }

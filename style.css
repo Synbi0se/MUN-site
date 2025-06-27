@@ -245,7 +245,6 @@ p{
     margin-bottom: 50px;
 }
 .team img{
-    /* : #777; ------------------------- */
     width: 100%;
     max-width: 200px;
     box-shadow: -5px 5px 5px #00331c;
@@ -272,6 +271,54 @@ p{
     max-width: 205px;
     box-shadow: -10px 10px 10px #001a0e;
     transition: 0.5s 0.3s;
+}
+
+/* =====================================================
+                       ARCHIVE
+======================================================*/
+.bookshelf{
+    text-align: center;
+}
+.bookshelf-btn {
+  --bg: #00331c;
+  --hover-bg: #007D45;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+.bookshelf-btn:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+.bookshelf-btn:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+.book img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.book-page{
+    display: grid;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 50px;
+}
+.book-title{
+    text-align: center;
+    font-weight: bold;
+}
+.book-line{
+    display: grid;
+    flex-direction: column;
+    align-items: end;
 }
 
 /* =====================================================

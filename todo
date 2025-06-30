@@ -1,4 +1,4 @@
-      TO DO
+TO DO
 
 ré-écrire wmun, price
 
@@ -9,4 +9,5 @@ ajouter le calendrier public
 ajuster le js pour qu'il récolte les données de ../img/sponsors
 réactiver le js 
 
-récupérer l'intro de archive de v2
+récupérer l'intro de archive de v2 : 
+  - Les séances de négociations sont séparées en deux comités : Un comité en francais et un en anglais. Ceux-ci se déroulent en simultané dans des salles différentes et traitent de sujets qui diffèrent entre eux. Cela permet de proposer une expérience unique à chacun sans se soucier de ses connaissances linguistiques.

@@ -12,3 +12,6 @@
 //         })
 //     }
 // });
+function OpenDocs() {
+    console.log('OpenDocs')
+}

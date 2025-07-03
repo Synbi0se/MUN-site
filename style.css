@@ -96,7 +96,7 @@ p{
 }
 .band{
     text-align: center;
-    background-color: #11111178;
+    background-color: #111111ca;
 }
 .band-link{
     display: flex;
@@ -276,7 +276,7 @@ p{
                        SCHOOL
 ======================================================*/
 .historic{
-    margin: 50px 0 50px;
+    margin-top: 50px;
 }
 .h-box{
     margin-bottom: 20px;
@@ -291,6 +291,21 @@ p{
 .historic .help{
     color: #00331c;
     font-style: italic;
+}
+.school{
+    margin-top: 100px;
+}
+.school h2{
+    margin-top: 50px;
+}
+.school h3{
+    margin-top: 30px;
+}
+.school img{
+    width: 100%;
+}
+.school li{
+    margin-bottom: 5px;
 }
 
 /* =====================================================

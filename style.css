@@ -162,9 +162,10 @@ p{
 }
 .wmun-icon{
     text-align: center;
+    padding-bottom: 20px;
 }
 .wmun-icon img{
-    width: 75px;
+    width: 70px;
 }
 .price{
     background: #007d45;
@@ -177,7 +178,7 @@ p{
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .price-icon img{
     width: 70px;
@@ -255,6 +256,7 @@ p{
     width: 100%;
     text-align: inherit;
     margin: 10px 0 0;
+    font-family: "ChaumontScript";
 }
 .team-role, .staff-role{
     width: 100%;
@@ -289,7 +291,7 @@ p{
     width: 100%;
 }
 .historic .help{
-    color: #00331c;
+    color: #007d45;
     font-style: italic;
 }
 .school{
@@ -317,6 +319,9 @@ p{
     min-height: 100px;
     margin-top: 50px;
 }
+.bookshelf-selector{
+  margin: 20px auto;
+}
 .bookshelf-btn {
   background: #00331c;
   color: #fff;
@@ -337,7 +342,7 @@ p{
   box-shadow: none;
 }
 .book{
-    margin-top: 200px;
+    padding-top: 100px;
 }
 .book img{
     width: 100%;
@@ -354,7 +359,7 @@ p{
     font-weight: bold;
 }
 .book-comite{
-    color: #00331c;
+    color: #007d45;
     font-family: "ChaumontScript";
     font-weight: normal;
 }

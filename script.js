@@ -12,6 +12,6 @@
 //         })
 //     }
 // });
-function OpenDocs() {
-    console.log('OpenDocs')
+function OpenDocs(doc) {
+    console.log(doc)
 }

@@ -14,7 +14,7 @@ html, body {
     height: 100%;
     overflow-x: hidden;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     text-align: center;
     font-family: "ChaumontScript";
 }
@@ -197,7 +197,7 @@ p{
     text-align: center;
     max-width: 400px;
     margin: 12px auto;
-    padding: 3% 15px;
+    padding: 15px;
     background: #d4d4d4;
     box-shadow: -3px 3px 10px #b4b4b4;
 }
@@ -210,6 +210,10 @@ p{
 }
 .key-element:hover{
     box-shadow: -3px 3px 10px #5e5e5e;
+}
+.key-text{
+    text-align: center;
+    font-family: "ChaumontScript";
 }
 
 /* =====================================================
@@ -263,16 +267,6 @@ p{
     text-align: inherit;
     font-style: italic;
 }
-.kami img:hover, .staff img:hover{
-    max-width: 205px;
-    box-shadow: -10px 10px 10px #777;
-    transition: 0.5s 0.3s;
-}
-.team img:hover{
-    max-width: 205px;
-    box-shadow: -10px 10px 10px #001a0e;
-    transition: 0.5s 0.3s;
-}
 
 /* =====================================================
                        SCHOOL
@@ -303,11 +297,12 @@ p{
 .school h3{
     margin-top: 30px;
 }
-.school img{
-    width: 100%;
-}
 .school li{
     margin-bottom: 5px;
+}
+.historic img, .school img{
+    width: 100%;
+    box-shadow: -5px 5px 5px #888;
 }
 
 /* =====================================================
@@ -347,6 +342,7 @@ p{
 .book img{
     width: 100%;
     margin-bottom: 10px;
+    box-shadow: -5px 5px 5px #888;
 }
 .book-page{
     display: grid;
@@ -368,21 +364,29 @@ p{
     flex-direction: column;
     align-items: end;
 }
+.book-pano{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.book-sponsor img{
+    width: 100%;
+    box-shadow: none;
+}
 
 /* =====================================================
                         DOCS
 ======================================================*/
 .download{
     color:#004525;
+    text-align: center;
 }
-.download .top{
+.download [class*=top]{
     background-color: #007D45;
     color: white;
     padding: 10px;
-    text-align: center;
 }
 .download .title,.button,.date,.lng{
-    text-align: center;
     padding: 5px;
 }
 .download .lng img{
@@ -390,16 +394,16 @@ p{
     max-width: 40px;
 }
 .download .odd{
-    background-color: #D4D4D4;
+    background-color: #d4d4d4;
 }
 .download button{
-    cursor:pointer;
+    background-color: transparent;
     border: none;
-    width: 100%;
-    background: transparent;
+    text-decoration: underline;
 }
 .dol svg{
-    width: 20px;
+    width: 15px;
+    margin-left: 5px;
 }
 
 /* =====================================================
@@ -413,8 +417,7 @@ footer{
     align-items: center;
     margin-top: 100px;
     min-height: 300px;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 50px 0px;
 }
 .footer-column{
     display: grid;

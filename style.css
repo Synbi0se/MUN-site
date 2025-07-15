@@ -296,8 +296,13 @@ p{
 
 .carousel{
     margin: 100px auto;
-    box-shadow: -5px 5px 5px #888;
     padding: 0;
+}
+.carousel-text{
+    text-align: center;
+}
+.carousel-inner{
+    box-shadow: -5px 5px 5px #888;
 }
 .school{
     background: #007d45;

@@ -42,21 +42,21 @@ p{
     color: white;
     text-align: center;
 }
-.welcome .onit{
+.welcome-onit{
     background-color: #111111C0;
     height: 100%;
     display: flex;
     align-items: center;
 }
 .welcome h2{
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .welcome img{
     width: 100%;
     max-width: 300px;
     box-shadow: -20px 20px 30px #111 ;
 }
-.welcome .flag{
+.welcome-flag{
     padding: 10px;
 }
 
@@ -233,7 +233,7 @@ p{
 .kami img, .staff-indiv img{
     width: 100%;
     max-width: 200px;
-    box-shadow: -5px 5px 5px #888;
+    box-shadow: -2px 2px 5px #888;
 }
 .kami-text{
     padding: 2%;
@@ -253,7 +253,7 @@ p{
 .team img{
     width: 100%;
     max-width: 200px;
-    box-shadow: -5px 5px 5px #00331c;
+    box-shadow: -2px 2px 5px #00331c;
 }
 .team-student, .staff-indiv{
     text-align: center;
@@ -317,7 +317,7 @@ p{
 }
 .historic img{
     width: 100%;
-    box-shadow: -5px 5px 5px #888;
+    box-shadow: -2px 2px 5px #888;
 }
 
 /* =====================================================
@@ -325,11 +325,11 @@ p{
 ======================================================*/
 .city img{
     width: 100%;
-    box-shadow: -5px 5px 5px #888;
+    box-shadow: -2px 2px 5px #888;
     margin-top: 10px;
 }
 .city{
-    margin-top: 100px;
+    padding-top: 100px;
 }
 .city-legend{
     color: #007d45;
@@ -344,6 +344,27 @@ p{
 }
 
 /* =====================================================
+                       ACCOUNT
+======================================================*/
+.account-info{
+    color: #007d45;
+    font-weight: bold;
+    text-align: center;
+}
+.account-form{
+    text-align: center;
+}
+.account-form input{
+    text-align: center;
+}
+.account-form #connect{
+    font-weight: bold;
+    color: #007d45;
+    background: #fff;
+    border: solid #007d45;
+}
+
+/* =====================================================
                        ARCHIVE
 ======================================================*/
 .bookshelf{
@@ -352,22 +373,18 @@ p{
     min-height: 100px;
     margin-top: 50px;
 }
+
+
 .bookshelf-selector{
-  margin: 20px auto;
+    margin-top: 20px;
 }
-.bookshelf-btn {
-  background: #007d45;
-  color: #000;
-  cursor: pointer;
-  border: 1px solid var(--bg);
-  border-radius: 4px;
-  padding: 0.8em 2em;
-  transition: 0.2s;
+.bookshelf-selector img{
+    width: 100%;
+    box-shadow: -5px 5px 5px #888;
+    transition: 0.2s 0.1s;
 }
-.bookshelf-btn:hover {
-  color: #fff;
-  background: #004f35;
-  box-shadow: 0.25rem 0.25rem var(--bg);
+.bookshelf-selector img:hover{
+    box-shadow: -7px 7px 5px #888;
 }
 .book{
     padding-top: 100px;
@@ -375,7 +392,7 @@ p{
 .book img{
     width: 100%;
     margin-bottom: 10px;
-    box-shadow: -5px 5px 5px #888;
+    box-shadow: -2px 2px 5px #888;
 }
 .book-page{
     display: grid;
@@ -420,7 +437,7 @@ p{
     text-align: center;
 }
 .download [class*=top]{
-    background-color: #007D45;
+    background-color: #007d45;
     color: white;
     padding: 10px;
 }

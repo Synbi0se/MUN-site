@@ -6,4 +6,4 @@ TO DO
 
 <!-- home --> prendre en photo des sacs
 
-<!-- ? --> connexion
+<!-- account --> connexion

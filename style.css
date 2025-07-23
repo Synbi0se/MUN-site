@@ -1,10 +1,10 @@
 @font-face{
     font-family: "DinaChaumont";
-    src: url("tf/DinaChaumont.otf") format("opentype");
+    src: url("rcs/DinaChaumont.otf") format("opentype");
 }
 @font-face{
     font-family: "ChaumontScript";
-    src: url("tf/ChaumontScript.otf") format("opentype");
+    src: url("rcs/ChaumontScript.otf") format("opentype");
 }
 
 html, body {
@@ -23,6 +23,7 @@ p{
 }
 #all{
     font-family: "DinaChaumont";
+    /* background-color: #000010; */
 }
 [class*="link"]{
     color: #fff;
@@ -348,23 +349,15 @@ p{
 ======================================================*/
 .signin{
     margin-top: 100px;
+    text-align: center;
 }
-.account-info{
+.signin-text{
     color: #007d45;
     font-weight: bold;
     text-align: center;
 }
-.account-form{
-    text-align: center;
-}
-.account-form input{
-    text-align: center;
-}
-.account-form #connect{
-    font-weight: bold;
-    color: #007d45;
-    background: #fff;
-    border: solid #007d45;
+.signin ul{
+    list-style: none;
 }
 
 /* =====================================================
@@ -497,6 +490,5 @@ footer img{
 footer iframe{
     width: 100%;
     max-width: 400px;
-    height: 75%;
-    min-height: 200px;
+    height: 200px;
 }

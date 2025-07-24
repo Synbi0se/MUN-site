@@ -26,11 +26,11 @@
                     <button class="btn dropdown-toggle band-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         A PROPOS DE NOUS
                     </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="team.html" title="Qui dirige et participe à l'organisation CHAU'MUN ?">Notre équipe</a></li>
-                    <li><a class="dropdown-item" href="school.html" title="Quelques mots sur notre établissement">Notre école</a></li>
-                    <li><a class="dropdown-item" href="city.html" title="Quelques mots sur notre ville">Notre ville</a></li>
-                </ul>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="team.html" title="Qui dirige et participe à l'organisation CHAU'MUN ?">Notre équipe</a></li>
+                        <li><a class="dropdown-item" href="school.html" title="Quelques mots sur notre établissement">Notre école</a></li>
+                        <li><a class="dropdown-item" href="city.html" title="Quelques mots sur notre ville">Notre ville</a></li>
+                    </ul>
                 </div>
                 <div class="dropdown col-sm-6 col-md-4 col-lg-3 col-xl-2 band-link">
                     <button class="btn dropdown-toggle band-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -43,7 +43,7 @@
                     </ul>
                 </div>
                 <div class="dropdown col-sm-6 col-md-4 col-lg-1 col-xl-1 offset-md-4 offset-lg-1 offset-xl-3 band-link band-lng">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="ду ю спек инглиш ?">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Changer de langue">
                         <img src="../img/flag-fr.webp" alt="FR">
                     </button>
                     <ul class="dropdown-menu">
@@ -78,11 +78,11 @@
     </div>
 
     <div class="signin">
-        <h2>Bienvenue dans votre espace de connexion</h2>
-        <p class="signin-text">Veuillez renseigner les informations suivantes</p>
+        <h2>Votre attribution</h2>
+        <p class="signin-text">Veuillez renseigner l'adresse mail <u>que vous utilisez pour nous contacter</u></p>
         <div class="signin-info">
-            <input type="text" id="signin-mail" placeholder="Votre adresse mail">
-            <button onclick="showDelegateAttribution()">ENTRER</button>
+            <input type="email" id="signin-mail" placeholder="Votre adresse mail">
+            <button class="signin-btn" onclick="showDelegateAttribution()">ENTRER</button>
         </div>
         <ul>
             <li id="committee">Comité : </li>

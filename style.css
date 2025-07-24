@@ -343,60 +343,6 @@ p{
 }
 
 /* =====================================================
-                        DOCS
-======================================================*/
-.download{
-    color:#004525;
-    text-align: center;
-}
-.download [class*=top]{
-    background-color: #007d45;
-    color: white;
-    padding: 10px;
-}
-.download .title,.button,.date,.lng{
-    padding: 5px;
-}
-.download .lng img{
-    width: 100%;
-    max-width: 40px;
-}
-.download .odd{
-    background-color: #d4d4d4;
-}
-.download button{
-    background-color: transparent;
-    border: none;
-    text-decoration: underline;
-}
-.dol svg{
-    width: 15px;
-    margin-left: 5px;
-}
-
-/* =====================================================
-                       ACCOUNT
-======================================================*/
-.signin{
-    margin-top: 100px;
-    text-align: center;
-}
-.signin-text{
-    color: #007d45;
-    font-weight: bold;
-    text-align: center;
-}
-.signin input{
-    min-width: 220px;
-}
-.signin ul{
-    list-style: none;
-}
-.signup{
-    margin-top: 100px;
-}
-
-/* =====================================================
                        ARCHIVE
 ======================================================*/
 .bookshelf{
@@ -448,11 +394,6 @@ p{
     flex-direction: column;
     align-items: end;
 }
-.book-pano{
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
-}
 .book-s{
     display: flex;
     align-items: center;
@@ -462,6 +403,73 @@ p{
 .book-sponsor img{
     width: 100%;
     box-shadow: none;
+}
+
+/* =====================================================
+                       ACCOUNT
+======================================================*/
+.signin{
+    margin-top: 100px;
+    text-align: center;
+}
+.signin-text{
+    color: #007d45;
+    font-weight: bold;
+    text-align: center;
+}
+.signin input{
+    min-width: 220px;
+}
+.signin-btn{
+    border: solid 1px #007d45;
+    border-radius: 0.7em;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #212121;
+    padding: 0.2rem 0.4rem;
+}
+.signin-btn:active {
+    background-color: #eeeeee;
+    transform: scale(1);
+}
+.signin ul{
+    margin-top: 20px;
+    list-style: none;
+}
+.signup{
+    margin-top: 100px;
+}
+
+/* =====================================================
+                        DOCS
+======================================================*/
+.download{
+    color:#004525;
+    text-align: center;
+}
+.download [class*=top]{
+    background-color: #007d45;
+    color: white;
+    padding: 10px;
+}
+.download .title,.button,.date,.lng{
+    padding: 5px;
+}
+.download .lng img{
+    width: 100%;
+    max-width: 40px;
+}
+.download .odd{
+    background-color: #d4d4d4;
+}
+.download button{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+.dol svg{
+    width: 15px;
+    margin-left: 5px;
 }
 
 /* =====================================================

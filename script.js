@@ -63,13 +63,13 @@ function showDelegateAttribution() {
   const attrib = document.getElementById('attrib');
   const index = mailList.indexOf(mail);
   if (mailList.includes(mail)) {
-    committee.innerHTML = "Comité : " + committeeList[index]
-    attrib.innerHTML = "Attribution : " + attribList[index]
-    mailbox.style.border = "solid 1px #00c400ff"
+    committee.innerHTML = 'Comité : '+ committeeList[index]
+    attrib.innerHTML = 'Attribution : '+ attribList[index]
+    mailbox.style.border = 'solid 1px #00c400ff'
   }
   else{
-    committee.innerHTML = "Attribution non faite"
-    attrib.innerHTML = "Attribution not settled"
-    mailbox.style.border = "solid 1px #ff0000ff"
+    committee.innerHTML = 'Attribution non faite'
+    attrib.innerHTML = 'Attribution not settled'
+    mailbox.style.border = 'solid 1px #ff0000ff'
   }
 }

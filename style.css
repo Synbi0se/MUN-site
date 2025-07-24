@@ -289,6 +289,7 @@ p{
 }
 .historic img{
     width: 100%;
+    box-shadow: -2px 2px 5px #888;
 }
 .historic .help{
     color: #007d45;
@@ -316,10 +317,7 @@ p{
 .school li{
     margin-bottom: 5px;
 }
-.historic img{
-    width: 100%;
-    box-shadow: -2px 2px 5px #888;
-}
+
 
 /* =====================================================
                         CITY
@@ -345,6 +343,38 @@ p{
 }
 
 /* =====================================================
+                        DOCS
+======================================================*/
+.download{
+    color:#004525;
+    text-align: center;
+}
+.download [class*=top]{
+    background-color: #007d45;
+    color: white;
+    padding: 10px;
+}
+.download .title,.button,.date,.lng{
+    padding: 5px;
+}
+.download .lng img{
+    width: 100%;
+    max-width: 40px;
+}
+.download .odd{
+    background-color: #d4d4d4;
+}
+.download button{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+.dol svg{
+    width: 15px;
+    margin-left: 5px;
+}
+
+/* =====================================================
                        ACCOUNT
 ======================================================*/
 .signin{
@@ -356,8 +386,14 @@ p{
     font-weight: bold;
     text-align: center;
 }
+.signin input{
+    min-width: 220px;
+}
 .signin ul{
     list-style: none;
+}
+.signup{
+    margin-top: 100px;
 }
 
 /* =====================================================
@@ -369,8 +405,10 @@ p{
     min-height: 100px;
     margin-top: 50px;
 }
-
-
+.bookshelf-text{
+    text-align: center;
+    margin-bottom: 0;
+}
 .bookshelf-selector{
     margin-top: 20px;
 }
@@ -419,42 +457,11 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .book-sponsor img{
     width: 100%;
     box-shadow: none;
-}
-
-/* =====================================================
-                        DOCS
-======================================================*/
-.download{
-    color:#004525;
-    text-align: center;
-}
-.download [class*=top]{
-    background-color: #007d45;
-    color: white;
-    padding: 10px;
-}
-.download .title,.button,.date,.lng{
-    padding: 5px;
-}
-.download .lng img{
-    width: 100%;
-    max-width: 40px;
-}
-.download .odd{
-    background-color: #d4d4d4;
-}
-.download button{
-    background-color: transparent;
-    border: none;
-    text-decoration: underline;
-}
-.dol svg{
-    width: 15px;
-    margin-left: 5px;
 }
 
 /* =====================================================
@@ -478,7 +485,7 @@ footer li{
     text-align: left;
     margin-bottom: 5px;
 }
-footer img{
+.footer-links img{
     height: 20px;
     margin-right: 10px;
 }
@@ -486,9 +493,9 @@ footer img{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;    
 }
-footer iframe{
+.footer-iframe img{
     width: 100%;
-    max-width: 400px;
-    height: 200px;
+    max-width: 300px;
 }

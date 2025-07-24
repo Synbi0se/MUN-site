@@ -3,7 +3,7 @@ const committeeList = [];
 const attribList = [];
 
 document.addEventListener('DOMContentLoaded', function() {
-    let N = 12;
+    let N = 12; // Number off sponsors
     // First sponsors section : Randomly selected
     let Sdiv1 = document.getElementById('s1');
     let Lst = [];
@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             Lst.sort((a, b) => a - b);
         }
-        for(let i = 0; i<6; i++) {
+        for(let i = 0; i<6; i++) { 
         Sdiv1.innerHTML += `<div class="col-sm-4 col-lg-2 sponsors-element"><img src="../img/sponsors/s(${Lst[i]}).webp" alt=""></div>`;
         }
     }
     
-    // Second sponsors section : All sponsors
+    // Second sponsors section : All sponsors   Only in home.html
     if (window.location.pathname.endsWith('home.html')) {
         let Sdiv2 = document.getElementById('s2');
         for (i = 0; i < N; i++) {
@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Fetching infos from attrib and put them in the 3 lists   Only in account.html
     if(window.location.pathname.endsWith('account.html')){
       fetch('../rcs/attrib.csv')
       .then(response => response.text())
@@ -54,13 +55,21 @@ function OpenDocs(doc) {
     console.log(doc)
 }
 
+// When activated by a button, shows the infos of a given email (if found in the datas)
 function showDelegateAttribution() {
-  var mail = document.getElementById('signin-mail').value;
-  if(mailList.includes(mail)) {
-    const committee = document.getElementById('committee');
-    const attrib = document.getElementById('attrib');
-    const index = mailList.indexOf(mail);
-    committee.append("Comité : " + committeeList[index])
-    attrib.append("Attribution : " + attrib[index])
+  const mailbox = document.getElementById('signin-mail');
+  const mail = mailbox.value
+  const committee = document.getElementById('committee');
+  const attrib = document.getElementById('attrib');
+  const index = mailList.indexOf(mail);
+  if (mailList.includes(mail)) {
+    committee.innerHTML = "Comité : " + committeeList[index]
+    attrib.innerHTML = "Attribution : " + attribList[index]
+    mailbox.style.border = "solid 1px #00c400ff"
+  }
+  else{
+    committee.innerHTML = "Attribution non faite"
+    attrib.innerHTML = "Attribution not settled"
+    mailbox.style.border = "solid 1px #ff0000ff"
   }
 }

@@ -1,10 +1,9 @@
 # TODO LIST
 
-```city``` continuer d'ajouter du contenu
 
-```account``` connexion
+```city``` images manquante et description pour la prefecture à faire 
 
-```archive``` taxi bologne
+```account``` essayer de faire une inscription
 
 ```home``` prendre en photo des sacs
 

@@ -465,7 +465,7 @@ p{
     color: white;
     padding: 10px;
 }
-.download .title,.mun-button,.date,.lng{
+.download .title,.download-button,.date,.lng{
     padding: 5px;
 }
 .download .lng img{
@@ -475,7 +475,7 @@ p{
 .download .odd{
     background-color: #d4d4d4;
 }
-.download mun-button{
+.download button{
     background-color: transparent;
     border: none;
     text-decoration: underline;

@@ -374,6 +374,9 @@ p{
     margin-bottom: 10px;
     box-shadow: -2px 2px 5px #888;
 }
+.book-logo img{
+    box-shadow: none;
+}
 .book-page{
     display: grid;
     flex-direction: column;
@@ -405,6 +408,16 @@ p{
     box-shadow: none;
 }
 
+/* =====================================================
+                      DOCUMENTS
+======================================================*/
+.document-text{
+    margin: 5px 0;
+    text-align: center;
+}
+.document-btn{
+    margin-bottom: 15px;
+}
 /* =====================================================
                        ACCOUNT
 ======================================================*/
@@ -452,7 +465,7 @@ p{
     color: white;
     padding: 10px;
 }
-.download .title,.button,.date,.lng{
+.download .title,.mun-button,.date,.lng{
     padding: 5px;
 }
 .download .lng img{
@@ -462,7 +475,7 @@ p{
 .download .odd{
     background-color: #d4d4d4;
 }
-.download button{
+.download mun-button{
     background-color: transparent;
     border: none;
     text-decoration: underline;
@@ -506,4 +519,61 @@ footer li{
 .footer-iframe img{
     width: 100%;
     max-width: 300px;
+}
+
+/* =====================================================
+                 MUN DOWNLOAD BUTTON
+======================================================*/
+.mun-wrap {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mun-wrap .mun-button{
+    position: relative;
+    width: 250px;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: linear-gradient(45deg, #007d45, #00521f);
+    overflow: hidden;
+}
+.mun-wrap .mun-button, .mun-icon, .mun-text {
+    transition: all 0.3s;
+}
+.mun-wrap .mun-button .mun-text {
+    transform: translateX(30px);
+    color: white;
+    font-weight: 600;
+}
+.mun-wrap .mun-button .mun-icon {
+    position: absolute;
+    transform: translateX(165px);
+    height: 100%;
+    width: 79px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mun-wrap .mun-button .svg{
+    width: 20px;
+    fill: white;
+}
+.mun-wrap .mun-button:hover {
+    background: linear-gradient(45deg, #007d45, #00521f);
+}
+.mun-wrap .mun-button:hover .mun-text {
+    color: transparent;
+}
+.mun-wrap .mun-button:hover .mun-icon {
+    width: 148px;
+    transform: translateX(47px);
+    text-align: center;
+}
+.mun-button:active {
+    transform: scale(0.98);
 }

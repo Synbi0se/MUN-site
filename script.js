@@ -51,8 +51,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function OpenDocs(doc) {
-    console.log(doc)
+function openDocs(doc) {
+  fetch(doc, { method: 'HEAD' })
+    .then(response => {
+      if (response.ok) {
+        window.open(doc);
+      } else {
+        console.log('File not found, please contact web-master at chaumun.lcdg@gmail.com');
+      }
+    })
+    .catch(() => {
+      console.log('File not found, please contact web-master at chaumun.lcdg@gmail.com');
+    });
 }
 
 // When activated by a button, shows the infos of a given email (if found in the datas)

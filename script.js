@@ -59,17 +59,14 @@ function openDocs(doc) {
 function showDelegateAttribution() {
   const mailbox = document.getElementById('signin-mail');
   const mail = mailbox.value
-  const committee = document.getElementById('committee');
   const attrib = document.getElementById('attrib');
   const index = mailList.indexOf(mail);
   if (mailList.includes(mail)) {
-    committee.innerHTML = 'Comité : '+ committeeList[index]
-    attrib.innerHTML = 'Attribution : '+ attribList[index]
+    attrib.innerHTML = `Attribution : ${attribList[index]} (${committeeList[index]})`
     mailbox.style.border = 'solid 1px #00c400ff'
   }
   else{
-    committee.innerHTML = 'Attribution non faite'
-    attrib.innerHTML = 'Attribution not settled'
+    attrib.innerHTML = 'Attribution not settled / Attibution non faite'
     mailbox.style.border = 'solid 1px #ff0000ff'
   }
 }

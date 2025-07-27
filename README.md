@@ -6,6 +6,8 @@
 
 ```home``` prendre en photo des sacs
 
+```ALL``` vérifier les header (lang canonical et description)
+
 # COMMENTAIRE
 
 ### FR

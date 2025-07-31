@@ -1,6 +1,6 @@
 # TODO LIST
 
-```city``` images manquante et description pour la prefecture à faire 
+```city``` images manquante
 
 ```account``` essayer de faire une inscription
 

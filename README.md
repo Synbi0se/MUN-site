@@ -6,11 +6,11 @@
 
 ```home``` prendre en photo des sacs
 
-```ALL``` vérifier les header (lang canonical et description)
+```index``` ```docs``` faire une description bilingue
 
 # COMMENTAIRE
 
-### FR
+### 🇫🇷 FR
 Ce dépot GitHub a pour but de créer un nouveau site web pour CHAU'MUN, une association lycéenne visant à faire débattre des élèves venant de l'Europe et du monde entier tels que le font les délégués des Nations Unies. Chaque élève est associé à :
 - un pays dont il doit défendre les intérêt ;
 - un comité, un groupe de débat ;
@@ -18,7 +18,7 @@ Ce dépot GitHub a pour but de créer un nouveau site web pour CHAU'MUN, une ass
 
 Moi c'est Timéo, je développe ce site depuis maintenant un an avec l'aide occasionnel de 2 amis. Si vous voulez m'aider, contactez moi via mon adresse mail : t.thomas.semence@gmail.com
 
-### EN
+### 🇬🇧 EN
 This GitHub repository has the purpose to create a new website for CHAU'MUN, a highschool association where students from Europe and the hole world debate as the United Nations delegates do. Each student is associated with :
 - a country of wich he has to defend the values ;
 - a comity, a debate group ;

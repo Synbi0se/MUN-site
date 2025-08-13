@@ -132,6 +132,7 @@ p{
 }
 .dropdown-item{
     color: #fff;
+    min-width: 150px;
 }
 .dropdown-item:hover{
     background-color: #313131ca;

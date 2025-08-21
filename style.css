@@ -330,7 +330,7 @@ p{
     margin-top: 10px;
 }
 .city{
-    padding-top: 100px;
+    margin-top: 50px;
 }
 .city-legend{
     color: #007d45;
@@ -342,6 +342,21 @@ p{
 }
 .city h3{
     margin-top: 30px;
+}
+
+/* =====================================================
+                       NEWSPAPER
+======================================================*/
+.newspaper{
+    margin-top: 50px;
+}
+.newspaper p{
+    margin-top: 20px;
+    text-align: center;
+}
+.newspaper img{
+    margin-left: 10px;
+    height:3rem;
 }
 
 /* =====================================================

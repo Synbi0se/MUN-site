@@ -23,7 +23,6 @@ p{
 }
 #all{
     font-family: "DinaChaumont";
-    /* background-color: #000010; */
 }
 [class*="link"]{
     color: #fff;
@@ -67,7 +66,7 @@ p{
 }
 
 /* =====================================================
-                        BAND
+                        HEADER
 ======================================================*/
 .vitrine{
     width: 100%;
@@ -101,6 +100,7 @@ p{
     text-align: left;
 }
 .band{
+    font-family: "ChaumontScript";
     text-align: center;
     background-color: #111111ca;
 }
@@ -114,6 +114,9 @@ p{
     color: #fff;
     text-decoration: none;
     font-style: normal;
+}
+.band-link text{
+    bottom: -1px;
 }
 .band-link img{
     margin: 0 5px;
@@ -133,6 +136,7 @@ p{
     border: none;
 }
 .dropdown-menu{
+    font-family: "DinaChaumont";
     background-color: #11111178;
 }
 .dropdown-item{
@@ -265,6 +269,7 @@ p{
 }
 .team-student, .staff-indiv{
     text-align: center;
+    margin-bottom: 30px;
 }
 .team-name, .staff-name{
     width: 100%;
@@ -302,6 +307,9 @@ p{
     color: #007d45;
     font-style: italic;
 }
+.historic a.help{
+    font-style: normal;
+}
 
 .carousel{
     margin: 100px auto;
@@ -320,6 +328,7 @@ p{
 }
 .school h3{
     margin-top: 30px;
+    text-align: left;
 }
 .school li{
     margin-bottom: 5px;
@@ -347,6 +356,12 @@ p{
 }
 .city h3{
     margin-top: 30px;
+}
+.precision{
+    text-align: center;
+}
+.precision a{
+    color: #007d45;
 }
 
 /* =====================================================

@@ -1,13 +1,3 @@
-# TODO LIST
-
-```city``` images manquante
-
-```account``` essayer de faire une inscription
-
-```home``` prendre en photo des sacs
-
-```index``` ```docs``` faire une description bilingue
-
 # COMMENTAIRE
 
 ### 🇫🇷 FR

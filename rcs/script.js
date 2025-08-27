@@ -54,6 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function openDocs(doc) {
   window.open(doc);
 }
+function error(message) {
+  alert(message)
+}
 
 // When activated by a button, shows the infos of a given email (if found in the datas)
 function showDelegateAttribution() {

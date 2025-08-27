@@ -378,6 +378,36 @@ p{
     margin-left: 10px;
     height:3rem;
 }
+.np{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    border: solid white 10px;
+}
+.np:hover{
+    cursor:zoom-in;
+    color: #ddd;
+}
+#np1{
+    background: url("../img/temp.webp") center no-repeat;
+}
+#np2{
+    background: url("../img/temp.webp") center no-repeat;
+}
+#np3{
+    background: url("../img/temp.webp") center no-repeat;
+}
+#np4{
+    background: url("../img/temp.webp") center no-repeat;
+}
+#np5{
+    background: url("../img/temp.webp") center no-repeat;
+}
+
 
 /* =====================================================
                        ARCHIVE
@@ -468,7 +498,6 @@ p{
 }
 .signin-text{
     color: #007d45;
-    font-weight: bold;
     text-align: center;
 }
 .signin input{
@@ -492,6 +521,12 @@ p{
 }
 .signup{
     margin-top: 100px;
+}
+.signup p{
+    text-align: center;
+}
+.signup a{
+    color: #007d45;
 }
 
 /* =====================================================

@@ -281,6 +281,7 @@ p{
     width: 100%;
     text-align: inherit;
     font-style: italic;
+    margin-bottom: 0;
 }
 .staff{
     margin-top: 100px;

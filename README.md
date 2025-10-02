@@ -7,7 +7,7 @@ Ce dépot GitHub a pour but de créer un nouveau site web pour CHAU'MUN, une ass
 T BRIL
 
 # 🇬🇧 EN
-This GitHub repository has the purpose to create a new website for CHAU'MUN, a highschool association where students from Europe and the hole world debate as the United Nations delegates do. Each student is associated with :
+This GitHub repository has the purpose to create a new website for CHAU'MUN, a highschool association where students from Europe and the hole world debate as the United Nations delegates do. Each student is associated with:
 - a country of wich he has to defend the values ;
 - a comity, a debate group ;
 - a worldwide issue.

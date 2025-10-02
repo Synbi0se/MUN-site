@@ -160,6 +160,9 @@ p{
 #s1{
     margin-bottom: 50px;
 }
+#s2{
+    margin-top: 50px;
+}
 .sponsors-element{
     margin-bottom: 20px;
     display: flex;
@@ -202,7 +205,7 @@ p{
     padding-bottom: 20px;
 }
 .key{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .key h2{
     padding-bottom: 50px;

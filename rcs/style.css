@@ -204,33 +204,6 @@ p{
     text-align: justify;
     padding-bottom: 20px;
 }
-.learnmore{
-    margin-top: 50px;
-    text-align: center;
-}
-.learnmore-item{
-    margin-bottom: 30px;
-}
-.learnmore img{
-    width: 100%;
-    max-width: 300px;
-    box-shadow: -2px 2px 5px #b4b4b4;
-    margin-bottom: 10px;
-}
-.learnmore img:hover{
-    cursor: pointer;
-}
-.learnmore a{
-    text-decoration: none;
-    color: black;
-    border: solid 2px #007d45;
-    border-radius: 0.5em;
-    padding: 0.2rem 0.4rem;
-}
-.learnmore a:hover{
-    transition: 0.2s;
-    color: #007d45;
-}
 .key{
     margin-top: 50px;
 }
@@ -257,9 +230,32 @@ p{
     text-align: center;
     font-family: "ChaumontScript";
 }
-.calendar{
-    margin-top: 100px;
+.learnmore{
+    margin-top: 50px;
     text-align: center;
+}
+.learnmore-item{
+    margin-bottom: 30px;
+}
+.learnmore img{
+    width: 100%;
+    max-width: 370px;
+    box-shadow: -2px 2px 5px #b4b4b4;
+    margin-bottom: 1    0px;
+}
+.learnmore img:hover{
+    cursor: pointer;
+}
+.learnmore a{
+    text-decoration: none;
+    color: black;
+    border: solid 2px #007d45;
+    border-radius: 0.5em;
+    padding: 0.2rem 0.4rem;
+}
+.learnmore a:hover{
+    transition: 0.2s;
+    color: #007d45;
 }
 /* =====================================================
                         TEAM

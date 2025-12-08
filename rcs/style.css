@@ -241,7 +241,7 @@ p{
     width: 100%;
     max-width: 370px;
     box-shadow: -2px 2px 5px #b4b4b4;
-    margin-bottom: 1    0px;
+    margin-bottom: 10px;
 }
 .learnmore img:hover{
     cursor: pointer;

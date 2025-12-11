@@ -70,6 +70,6 @@ function showDelegateAttribution() {
   }
   else{
     attrib.innerHTML = 'Attribution not settled / Attibution non faite'
-    mailbox.style.border = 'solid 1px #ff0000ff'
+    mailbox.style.border = 'solid 1px #9C2007'
   }
 }

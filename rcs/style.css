@@ -24,13 +24,22 @@ p{
 #all{
     font-family: "DinaChaumont";
 }
+:root{
+    --unblue: #009EDB;
+    --muncolor: var(--unblue);
+}
 [class*="link"]{
     color: #fff;
     font-style: italic;
+    transition-duration: 0.4s;
+}
+[class*="link"]:hover{
+    color: var(--muncolor);
 }
 .trans img{
     width: 100%;
 }
+
 
 /* =====================================================
                     WELCOME PAGE
@@ -124,6 +133,7 @@ p{
 }
 .band-link:hover{
     background-color: #313131ca;
+    color: #fff;
 }
 .btn{
     color: #fff;
@@ -173,7 +183,9 @@ p{
     max-width: 120px;
 }
 .wmun{
-    background: #007d45;
+    background: url(../temp.webp) center no-repeat;
+    background-size: cover;
+    padding: 50px 0;
     color: #fff;
 }
 .wmun-icon{
@@ -184,7 +196,10 @@ p{
     width: 70px;
 }
 .price{
-    background: #007d45;
+    margin-top: 100px;
+    padding: 50px 0;
+    background: url(../temp2.webp) center top 40% no-repeat;
+    background-size: cover;
     color: #fff;
 }
 .price h2{
@@ -249,13 +264,13 @@ p{
 .learnmore a{
     text-decoration: none;
     color: black;
-    border: solid 2px #007d45;
+    border: solid 2px var(--muncolor);
     border-radius: 0.5em;
     padding: 0.2rem 0.4rem;
+    transition-duration: 0.2s;
 }
 .learnmore a:hover{
-    transition: 0.2s;
-    color: #007d45;
+    color: var(--muncolor);
 }
 /* =====================================================
                         TEAM
@@ -281,17 +296,13 @@ p{
 .kami h3{
     font-style: italic;
 }
-.team{
-    background: #007d45;
-    color: #fff;
-}
 .team h2, .staff h2{
     margin-bottom: 50px;
 }
 .team img{
     width: 100%;
     max-width: 200px;
-    box-shadow: -2px 2px 5px #00331c;
+    box-shadow: -2px 2px 5px #888;
 }
 .team-student, .staff-indiv{
     text-align: center;
@@ -305,6 +316,7 @@ p{
 }
 .team-role, .staff-role{
     width: 100%;
+    color: var(--muncolor);
     text-align: inherit;
     font-style: italic;
     margin-bottom: 0;
@@ -331,7 +343,7 @@ p{
     box-shadow: -2px 2px 5px #888;
 }
 .historic .help{
-    color: #007d45;
+    color: var(--muncolor);
     font-style: italic;
 }
 .historic a.help{
@@ -349,8 +361,6 @@ p{
     box-shadow: -5px 5px 5px #888;
 }
 .school{
-    background: #007d45;
-    color: #fff;
     padding-top: 50px;
 }
 .school h3{
@@ -359,6 +369,9 @@ p{
 }
 .school li{
     margin-bottom: 5px;
+}
+.school b, .school h3{
+    color: var(--muncolor);
 }
 
 
@@ -374,7 +387,7 @@ p{
     margin-top: 50px;
 }
 .city-legend{
-    color: #007d45;
+    color: var(--muncolor);
     font-weight: bold;
     padding-top: 5px;
 }
@@ -388,7 +401,7 @@ p{
     text-align: center;
 }
 .precision a{
-    color: #007d45;
+    color: var(--muncolor);
 }
 
 /* =====================================================
@@ -485,7 +498,7 @@ p{
     font-weight: bold;
 }
 .book-comite{
-    color: #007d45;
+    color: var(--unblue);
     font-family: "ChaumontScript";
     font-weight: normal;
 }
@@ -524,14 +537,14 @@ p{
     text-align: center;
 }
 .signin-text{
-    color: #007d45;
+    color: var(--muncolor);
     text-align: center;
 }
 .signin input{
     min-width: 220px;
 }
 .signin-btn{
-    border: solid 1px #007d45;
+    border: solid 1px var(--muncolor);
     border-radius: 0.7em;
     background-color: #ffffff;
     cursor: pointer;
@@ -553,19 +566,18 @@ p{
     text-align: center;
 }
 .signup a{
-    color: #007d45;
+    color: var(--muncolor);
 }
 
 /* =====================================================
                         DOCS
 ======================================================*/
 .download{
-    color:#004525;
+    color: black;
     text-align: center;
 }
 .download [class*=top]{
-    background-color: #007d45;
-    color: white;
+    border-bottom: solid black 1px;
     padding: 10px;
 }
 .download .title,.download-button,.date,.lng{
@@ -621,17 +633,22 @@ footer h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;    
+    padding: 20px;
 }
 .footer-iframe img{
     width: 100%;
     max-width: 300px;
+    transition-duration: 0.5s;
+}
+.footer-iframe img:hover{
+    transform: scale(1.02);
 }
 
 /* =====================================================
                  MUN DOWNLOAD BUTTON
 ======================================================*/
 .mun-wrap {
+    --mun2 : #ac0000;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -645,7 +662,7 @@ footer h4{
     display: flex;
     align-items: center;
     border: none;
-    background: linear-gradient(45deg, #007d45, #00521f);
+    background: linear-gradient(45deg, var(--mun2), var(--muncolor));
     overflow: hidden;
 }
 .mun-wrap .mun-button, .mun-icon, .mun-text {
@@ -671,7 +688,7 @@ footer h4{
     fill: white;
 }
 .mun-wrap .mun-button:hover {
-    background: linear-gradient(45deg, #007d45, #00521f);
+    background: linear-gradient(45deg, var(--mun2),var(--muncolor));
 }
 .mun-wrap .mun-button:hover .mun-text {
     color: transparent;

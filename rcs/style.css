@@ -657,7 +657,7 @@ footer h4{
                  MUN DOWNLOAD BUTTON
 ======================================================*/
 .mun-wrap {
-    --mun2 : #ac0000;
+    --mun2 : #006b95;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -671,7 +671,7 @@ footer h4{
     display: flex;
     align-items: center;
     border: none;
-    background: linear-gradient(45deg, var(--mun2), var(--unblue));
+    background: linear-gradient(45deg, var(--unblue), var(--mun2));
     overflow: hidden;
 }
 .mun-wrap .mun-button, .mun-icon, .mun-text {
@@ -697,7 +697,7 @@ footer h4{
     fill: white;
 }
 .mun-wrap .mun-button:hover {
-    background: linear-gradient(45deg, var(--mun2),var(--unblue));
+    background: linear-gradient(45deg, var(--unblue),var(--mun2));
 }
 .mun-wrap .mun-button:hover .mun-text {
     color: transparent;

@@ -39,6 +39,31 @@ p{
     width: 100%;
 }
 
+/* =====================================================
+                    TEMPORARY
+======================================================*/
+.helpus{
+    border: solid 3px var(--unblue);
+    border-radius: 20px;
+    padding: 1rem 20px;
+    margin: 50px 0;
+    text-align: center;
+}
+.helpus-text{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform:uppercase;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.helpus a{
+    color: var(--unblue);
+}
+.helpus img{
+    height: 10rem;
+}
 
 /* =====================================================
                     WELCOME PAGE

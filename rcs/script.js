@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const rows = text.trim().split('\n');
         const dataRows = rows.slice(1);
         dataRows.forEach(row => {
-          const [mail, committee, attrib] = row.split(';');
+          const [mail, committee, attrib] = row.split(',');
           if (mail) {
             mailList.push(mail);
           }

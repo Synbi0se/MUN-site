@@ -80,11 +80,46 @@
     </div>
 
     <div class="signin">
+        <script type="module">
+            import { createClient } from 'https://esm.sh/@supabase/supabase-js'
+            const supabaseUrl = 'https://kfxppusebhulrwcnevzj.supabase.co'
+            const supabaseKey = 'sb_publishable_KSrnhuat2zVQJqQvSsukkw_z8CL3veh'
+            const supabase = createClient(supabaseUrl, supabaseKey)
+
+            window.findAttribution = async function() {
+            const adresseMail = document.getElementById('signin-mail').value.trim();
+            const resultatDiv = document.getElementById('attrib');
+
+            if (!adresseMail) {
+                resultatDiv.innerHTML = 'Please enter a correct email';
+                return;
+            }
+
+            try {
+                const { data, error } = await supabase
+                .from('Attribution 2026')
+                .select('mail, committee, attrib')
+                .eq('mail', adresseMail)
+                .single()
+
+                if (error) {
+                resultatDiv.innerHTML = `${adresseMail} not found`;
+                return;
+                }
+                resultatDiv.innerHTML = `
+                Comité: <strong>${data.committee}</strong><br>
+                Attribution: <strong>${data.attrib}</strong>
+                `;
+            } catch (err) {
+                document.getElementById('attrib').innerHTML = 'Technical error';
+            }
+            }
+        </script>
         <h2>Your attribution:</h2>
         <p class="signin-text">Please inform the e-mail address <u>that you use to contact us</u></p>
         <div class="signin-info">
             <input type="email" id="signin-mail" placeholder="Your e-mail">
-            <button class="signin-btn" onclick="showDelegateAttribution()">ENTRER</button>
+            <button class="signin-btn" onclick="findAttribution()">ENTRER</button>
         </div>
         <p id="attrib">Attribution </p>
     </div>

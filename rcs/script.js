@@ -3,18 +3,18 @@ const committeeList = [];
 const attribList = [];
 
 document.addEventListener('DOMContentLoaded', function() {
-    let N = 6; // Number of sponsors
+    let N = 9; // Number of sponsors
     // First sponsors section : Randomly selected
     let Sdiv1 = document.getElementById('s1');
-    let Lst = [1,2,3,4,5,6];
+    let Lst = [];
     if (Sdiv1 !== null) {
-        // while (Lst.length < 6){
-        //     let Random = Math.floor(Math.random() * N) + 1;
-        //     if (!Lst.includes(Random)) {
-        //         Lst.push(Random);
-        //     }
-        //     Lst.sort((a, b) => a - b);
-        // }
+        while (Lst.length < 6){
+            let Random = Math.floor(Math.random() * N) + 1;
+            if (!Lst.includes(Random)) {
+                Lst.push(Random);
+            }
+            // Lst.sort((a, b) => a - b);
+        }
         for(let i = 0; i<6; i++) { 
           Sdiv1.innerHTML += `<div class="col-sm-4 col-lg-2 sponsors-element"><img src="../img/sponsors/s(${Lst[i]}).webp" alt=""></div>`;
         }

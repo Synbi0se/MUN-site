@@ -3,7 +3,7 @@ const committeeList = [];
 const attribList = [];
 
 document.addEventListener('DOMContentLoaded', function() {
-    let N = 9; // Number of sponsors
+    let N = 10; // Number of sponsors
     // First sponsors section : Randomly selected
     let Sdiv1 = document.getElementById('s1');
     let Lst = [];

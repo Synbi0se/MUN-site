@@ -38,6 +38,16 @@ p{
 .trans img{
     width: 100%;
 }
+#new{
+    background-color: red; 
+    color: white; 
+    align-self: center;
+    position: relative;
+    bottom:3px;
+    font-size:12px; 
+    padding: 4px 4px 3px 4px; 
+    border-radius: 5px;
+}
 
 /* =====================================================
                     TEMPORARY
@@ -275,9 +285,13 @@ p{
 }
 .learnmore-item{
     margin-bottom: 30px;
+    overflow: visible;
+}
+.learnmore-item div{
+    margin-bottom: 5px;
 }
 .learnmore img{
-    width: 100%;
+    max-height: 250px;
     max-width: 370px;
     box-shadow: -2px 2px 5px #b4b4b4;
     margin-bottom: 10px;

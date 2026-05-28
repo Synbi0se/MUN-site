@@ -1,0 +1,3 @@
+Bonjour, enchanté,
+Cette note est écrite concernant les images !btn.webp.
+Si vous voulez garder l'harmonie sur la page et ne pas refaire les 2 autres, j'ai pris l'image en 4:3, j'y ai ajouté une couche noir à 70% d'opacité (peut varier en fonction de l'image) et j'ai mis l'année avec l'outil texte sur GIMP avec la police ChaumontScript situé dans /rcs

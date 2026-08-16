@@ -35,6 +35,9 @@ p{
 [class*="link"]:hover{
     color: var(--unblue);
 }
+img{
+    color: #000;
+}
 .trans img{
     width: 100%;
 }
@@ -92,8 +95,9 @@ p{
     z-index: 0;
     height: 100%;
     background: url("../img/bg.webp") center no-repeat;
+    background-size: cover;
     background-color: #111111C0;
-    color: white;
+    color: #ffffff;
     text-align: center;
 }
 .welcome-onit{
@@ -109,9 +113,14 @@ p{
     width: 100%;
     max-width: 300px;
     box-shadow: -20px 20px 30px #111 ;
+    color: #ffffff;
 }
 .welcome-flag{
     padding: 10px;
+}
+.welcome a{
+    color: #ffffff;
+    text-decoration: underline #ffffff;
 }
 
 /* =====================================================
@@ -120,8 +129,39 @@ p{
 .vitrine{
     width: 100%;
     background: url(../img/bg.webp) no-repeat center;
+    background-size: cover;
     color: #fff;
 }
+/* custom vitrine */
+.vitrine-account{
+    background: url(../img/) no-repeat center;
+    background-size: cover;
+}
+.vitrine-archive{
+    background: url(../img/archive/) no-repeat center;
+    background-size: cover;
+}
+.vitrine-city{
+    background: url(../img/city/!pano-city.webp) no-repeat center;
+    background-size: cover;
+}
+.vitrine-documents{
+    background: url(../img/) no-repeat center;
+    background-size: cover;
+}
+.vitrine-newspaper{
+    background: url(../img/) no-repeat center;
+    background-size: cover;
+}
+.vitrine-school{
+    background: url(../img/school/!pano-cdg.webp) no-repeat center;
+    background-size: cover;
+}
+.vitrine-team{
+    background: url(../img/members/team.webp) no-repeat center;
+    background-size: cover;
+}
+/*  */
 .vitrine-glass{
     background-color: #111111c0;
 }
@@ -193,6 +233,9 @@ p{
     color: #fff;
     min-width: 150px;
 }
+.dropdown-item img, .dropdown-toggle img{
+    color: #fff;
+}
 .dropdown-item:hover{
     background-color: #313131ca;
     color: #fff;
@@ -223,7 +266,7 @@ p{
     max-width: 150px;
 }
 .wmun{
-    background: url(../img/actions/wmun.webp) center no-repeat;
+    background: url(../img/actions/wmun.webp) center no-repeat color(srgb 0.83 0.83 0.83); /* color in case image doesn't display */
     background-size: cover;
     padding: 50px 0;
     color: #fff;
@@ -238,7 +281,7 @@ p{
 .price{
     margin-top: 100px;
     padding: 50px 0;
-    background: url(../img/actions/prices.webp) center bottom no-repeat;
+    background: url(../img/actions/prices.webp) center bottom no-repeat color(srgb 0.83 0.83 0.83); /* color in case image doesn't display */
     background-size: cover;
     color: #fff;
 }
@@ -250,10 +293,9 @@ p{
     justify-content: center;
     width: 100%;
     padding-bottom: 20px;
-
 }
 .price-icon img{
-    width: 70px;
+    height: 70px;
 }
 .price-text{
     text-align: justify;
@@ -292,9 +334,18 @@ p{
 .learnmore-item{
     margin-bottom: 30px;
     overflow: visible;
+    display: grid;
+    justify-content: center;
 }
 .learnmore-item div{
     margin-bottom: 5px;
+}
+.learnmore-text{
+    justify-self: center;
+    width: fit-content;
+    border: solid 2px var(--unblue);
+    border-radius: 0.5em;
+    padding: 0.2rem 0.4rem;
 }
 .learnmore img{
     max-height: 250px;
@@ -308,9 +359,6 @@ p{
 .learnmore a{
     text-decoration: none;
     color: black;
-    border: solid 2px var(--unblue);
-    border-radius: 0.5em;
-    padding: 0.2rem 0.4rem;
     transition-duration: 0.2s;
 }
 .learnmore a:hover{
@@ -319,25 +367,25 @@ p{
 /* =====================================================
                         TEAM
 ======================================================*/
-.kami{
+.thecoordinator{
     text-align: center;
     margin-bottom: 100px;
 }
-.kami-box{
+.thecoordinator-box{
     align-items: center;
     align-content: center;
 }
-.kami img, .staff-indiv img{
+.thecoordinator img, .staff-indiv img{
     width: 100%;
     max-width: 200px;
     box-shadow: -2px 2px 5px #888;
 }
-.kami-text{
+.thecoordinator-text{
     padding: 2%;
     display: grid;
     align-items: center;
 }
-.kami h3{
+.thecoordinator h3{
     font-style: italic;
 }
 .team h2, .staff h2{
@@ -491,6 +539,7 @@ p{
 /* =====================================================
                        ARCHIVE
 ======================================================*/
+
 .bookshelf{
     text-align: center;
     align-content: center;
@@ -516,7 +565,15 @@ p{
     transform: scale(0.99);
 }
 .book{
-    padding-top: 100px;
+    margin-top: 200px;
+}
+.book .flags , .book .flags p{
+    text-align: center;
+}
+.book .flags img{
+    width:unset;
+    height: 1.5rem;
+    margin: 0 0 3px 3px;
 }
 .book img{
     width: 100%;
@@ -555,6 +612,7 @@ p{
 .book-sponsor img{
     width: 100%;
     box-shadow: none;
+    filter: grayscale(1);
 }
 
 /* =====================================================
@@ -614,7 +672,7 @@ p{
     text-align: center;
 }
 .signup img{
-    height: 1.5rem;
+    height: 2rem;
     margin: 0 0 3px 3px;
 }
 
@@ -626,7 +684,6 @@ p{
     text-align: center;
 }
 .download [class*=top]{
-    border-bottom: solid black 1px;
     padding: 10px;
 }
 .download .title,.download-button,.date,.lng{
@@ -634,7 +691,7 @@ p{
 }
 .download .lng img{
     width: 100%;
-    max-width: 40px;
+    max-width: 50px;
 }
 .download .odd{
     background-color: #d4d4d4;

@@ -3,8 +3,20 @@ const committeeList = [];
 const attribList = [];
 
 document.addEventListener('DOMContentLoaded', function() {
-    let N = 25; // Number of sponsors
-
+    let N = 18; // Number of sponsors
+    let altIs ; // alt displayed
+    
+    // For alt text
+    if (window.location.pathname.includes('/fr/')) {
+        altIs = "Un partenaire"
+    }
+    if (window.location.pathname.includes('/en/')) {
+        altIs = "A sponsor"
+    }
+    if (window.location.pathname.includes('/es/')) {
+        altIs = "Un mecenas"
+    }
+    
     // First sponsors section : Randomly selected
     let Sdiv1 = document.getElementById('s1');
     let Lst = [];
@@ -17,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             Lst.sort((a, b) => a - b);
         }
         for(let i = 0; i<6; i++) { 
-          Sdiv1.innerHTML += `<div class="col-sm-4 col-lg-2 sponsors-element"><img src="../img/sponsors/s${Lst[i]}.webp" alt=""></div>`;
+          Sdiv1.innerHTML += `<div class="col-sm-4 col-lg-2 sponsors-element"><img src="../img/sponsors/s${Lst[i]}.webp" alt="${altIs}"></div>`;
         }
     }
     
@@ -25,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.location.pathname.endsWith('home.html')) {
         let Sdiv2 = document.getElementById('s2');
         for (i = 0; i < N; i++) {
-            Sdiv2.innerHTML += `<div class="col-sm-4 col-lg-2 sponsors-element"><img src="../img/sponsors/s${i+1}.webp" alt=""></div>`;
+            Sdiv2.innerHTML += `<div class="col-sm-4 col-lg-2 sponsors-element"><img src="../img/sponsors/s${i+1}.webp" alt="${altIs}"></div>`;
         }
     }
 });

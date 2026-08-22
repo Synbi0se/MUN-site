@@ -134,11 +134,11 @@ img{
 }
 /* custom vitrine */
 .vitrine-account{
-    background: url(../img/) no-repeat center;
+    background: url(../img/!pano-account.webp) no-repeat center;
     background-size: cover;
 }
 .vitrine-archive{
-    background: url(../img/archive/) no-repeat center;
+    background: url(../img/archive/!pano-archive.webp) no-repeat center;
     background-size: cover;
 }
 .vitrine-city{
@@ -146,11 +146,11 @@ img{
     background-size: cover;
 }
 .vitrine-documents{
-    background: url(../img/) no-repeat center;
+    background: url(../img/!pano-documents.webp) no-repeat center;
     background-size: cover;
 }
 .vitrine-newspaper{
-    background: url(../img/) no-repeat center;
+    background: url(../img/!pano-newspaper.webp) no-repeat center;
     background-size: cover;
 }
 .vitrine-school{
@@ -158,10 +158,10 @@ img{
     background-size: cover;
 }
 .vitrine-team{
-    background: url(../img/members/team.webp) no-repeat center;
+    background: url(../img/members/!pano-members.webp) no-repeat center;
     background-size: cover;
 }
-/*  */
+/* ===== */
 .vitrine-glass{
     background-color: #111111c0;
 }
@@ -266,7 +266,7 @@ img{
     max-width: 150px;
 }
 .wmun{
-    background: url(../img/actions/wmun.webp) center no-repeat color(srgb 0.83 0.83 0.83); /* color in case image doesn't display */
+    background: url(../img/actions/wmun.webp) center top 40% no-repeat color(srgb 0.83 0.83 0.83); /* color in case image doesn't display */
     background-size: cover;
     padding: 50px 0;
     color: #fff;

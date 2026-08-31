@@ -3,7 +3,7 @@ const committeeList = [];
 const attribList = [];
 
 document.addEventListener('DOMContentLoaded', function() {
-    let N = 18; // Number of sponsors
+    let N = 16; // Number of sponsors
     let altIs ; // alt displayed
     
     // For alt text
@@ -20,7 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // First sponsors section : Randomly selected
     let Sdiv1 = document.getElementById('s1');
     let Lst = [];
-    if (Sdiv1 !== null) {
+    if (Sdiv1 !== null & innerWidth<=580) { // in case of a small width window, div will not appear
+        Sdiv1.remove()
+    }
+    else if (Sdiv1 !== null) {
         while (Lst.length < 6){
             let Random = Math.floor(Math.random() * N) + 1;
             if (!Lst.includes(Random)) {
@@ -37,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.location.pathname.endsWith('home.html')) {
         let Sdiv2 = document.getElementById('s2');
         for (i = 0; i < N; i++) {
-            Sdiv2.innerHTML += `<div class="col-sm-4 col-lg-2 sponsors-element"><img src="../img/sponsors/s${i+1}.webp" alt="${altIs}"></div>`;
+            Sdiv2.innerHTML += `<div class="col-xs-6 col-sm-4 col-lg-2 sponsors-element"><img src="../img/sponsors/s${i+1}.webp" alt="${altIs}"></div>`;
         }
     }
 });
